@@ -1,0 +1,2538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/1">
+		<skos:prefLabel xml:lang="zxx">abk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Abkhazian</skos:definition>
+		<skos:definition xml:lang="fre">abkhaze</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/2">
+		<skos:prefLabel xml:lang="zxx">ace</skos:prefLabel>
+		<skos:definition xml:lang="eng">Achinese</skos:definition>
+		<skos:definition xml:lang="fre">aceh</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/3">
+		<skos:prefLabel xml:lang="zxx">ach</skos:prefLabel>
+		<skos:definition xml:lang="eng">Acoli</skos:definition>
+		<skos:definition xml:lang="fre">acoli</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/4">
+		<skos:prefLabel xml:lang="zxx">ada</skos:prefLabel>
+		<skos:definition xml:lang="eng">Adangme</skos:definition>
+		<skos:definition xml:lang="fre">adangme</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/5">
+		<skos:prefLabel xml:lang="zxx">ady</skos:prefLabel>
+		<skos:definition xml:lang="eng">Adyghe; Adygei</skos:definition>
+		<skos:definition xml:lang="fre">adygh</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/6">
+		<skos:prefLabel xml:lang="zxx">aar</skos:prefLabel>
+		<skos:definition xml:lang="eng">Afar</skos:definition>
+		<skos:definition xml:lang="fre">afar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/7">
+		<skos:prefLabel xml:lang="zxx">afh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Afrihili</skos:definition>
+		<skos:definition xml:lang="fre">afrihili</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/8">
+		<skos:prefLabel xml:lang="zxx">afr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Afrikaans</skos:definition>
+		<skos:definition xml:lang="fre">afrikaans</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/9">
+		<skos:prefLabel xml:lang="zxx">afa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Afro-Asiatic languages</skos:definition>
+		<skos:definition xml:lang="fre">afro-asiatiques, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/10">
+		<skos:prefLabel xml:lang="zxx">ain</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ainu</skos:definition>
+		<skos:definition xml:lang="fre">anou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/11">
+		<skos:prefLabel xml:lang="zxx">aka</skos:prefLabel>
+		<skos:definition xml:lang="eng">Akan</skos:definition>
+		<skos:definition xml:lang="fre">akan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/12">
+		<skos:prefLabel xml:lang="zxx">akk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Akkadian</skos:definition>
+		<skos:definition xml:lang="fre">akkadien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/13">
+		<skos:prefLabel xml:lang="zxx">alb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Albanian</skos:definition>
+		<skos:definition xml:lang="fre">albanais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/14">
+		<skos:prefLabel xml:lang="zxx">sqi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Albanian</skos:definition>
+		<skos:definition xml:lang="fre">albanais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/15">
+		<skos:prefLabel xml:lang="zxx">ale</skos:prefLabel>
+		<skos:definition xml:lang="eng">Aleut</skos:definition>
+		<skos:definition xml:lang="fre">aloute</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/16">
+		<skos:prefLabel xml:lang="zxx">alg</skos:prefLabel>
+		<skos:definition xml:lang="eng">Algonquian languages</skos:definition>
+		<skos:definition xml:lang="fre">algonquines, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/17">
+		<skos:prefLabel xml:lang="zxx">tut</skos:prefLabel>
+		<skos:definition xml:lang="eng">Altaic languages</skos:definition>
+		<skos:definition xml:lang="fre">altaques, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/18">
+		<skos:prefLabel xml:lang="zxx">amh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Amharic</skos:definition>
+		<skos:definition xml:lang="fre">amharique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/19">
+		<skos:prefLabel xml:lang="zxx">anp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Angika</skos:definition>
+		<skos:definition xml:lang="fre">angika</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/20">
+		<skos:prefLabel xml:lang="zxx">apa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Apache languages</skos:definition>
+		<skos:definition xml:lang="fre">apaches, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/21">
+		<skos:prefLabel xml:lang="zxx">ara</skos:prefLabel>
+		<skos:definition xml:lang="eng">Arabic</skos:definition>
+		<skos:definition xml:lang="fre">arabe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/22">
+		<skos:prefLabel xml:lang="zxx">arg</skos:prefLabel>
+		<skos:definition xml:lang="eng">Aragonese</skos:definition>
+		<skos:definition xml:lang="fre">aragonais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/23">
+		<skos:prefLabel xml:lang="zxx">arp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Arapaho</skos:definition>
+		<skos:definition xml:lang="fre">arapaho</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/24">
+		<skos:prefLabel xml:lang="zxx">arw</skos:prefLabel>
+		<skos:definition xml:lang="eng">Arawak</skos:definition>
+		<skos:definition xml:lang="fre">arawak</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/25">
+		<skos:prefLabel xml:lang="zxx">arm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Armenian</skos:definition>
+		<skos:definition xml:lang="fre">armnien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/26">
+		<skos:prefLabel xml:lang="zxx">hye</skos:prefLabel>
+		<skos:definition xml:lang="eng">Armenian</skos:definition>
+		<skos:definition xml:lang="fre">armnien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/27">
+		<skos:prefLabel xml:lang="zxx">rup</skos:prefLabel>
+		<skos:definition xml:lang="eng">Aromanian; Arumanian; Macedo-Romanian</skos:definition>
+		<skos:definition xml:lang="fre">aroumain; macdo-roumain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/28">
+		<skos:prefLabel xml:lang="zxx">art</skos:prefLabel>
+		<skos:definition xml:lang="eng">Artificial languages</skos:definition>
+		<skos:definition xml:lang="fre">artificielles, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/29">
+		<skos:prefLabel xml:lang="zxx">asm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Assamese</skos:definition>
+		<skos:definition xml:lang="fre">assamais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/30">
+		<skos:prefLabel xml:lang="zxx">ast</skos:prefLabel>
+		<skos:definition xml:lang="eng">Asturian; Bable; Leonese; Asturleonese</skos:definition>
+		<skos:definition xml:lang="fre">asturien; bable; lonais; asturolonais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/31">
+		<skos:prefLabel xml:lang="zxx">ath</skos:prefLabel>
+		<skos:definition xml:lang="eng">Athapascan languages</skos:definition>
+		<skos:definition xml:lang="fre">athapascanes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/32">
+		<skos:prefLabel xml:lang="zxx">aus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Australian languages</skos:definition>
+		<skos:definition xml:lang="fre">australiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/33">
+		<skos:prefLabel xml:lang="zxx">map</skos:prefLabel>
+		<skos:definition xml:lang="eng">Austronesian languages</skos:definition>
+		<skos:definition xml:lang="fre">austronsiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/34">
+		<skos:prefLabel xml:lang="zxx">ava</skos:prefLabel>
+		<skos:definition xml:lang="eng">Avaric</skos:definition>
+		<skos:definition xml:lang="fre">avar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/35">
+		<skos:prefLabel xml:lang="zxx">ave</skos:prefLabel>
+		<skos:definition xml:lang="eng">Avestan</skos:definition>
+		<skos:definition xml:lang="fre">avestique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/36">
+		<skos:prefLabel xml:lang="zxx">awa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Awadhi</skos:definition>
+		<skos:definition xml:lang="fre">awadhi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/37">
+		<skos:prefLabel xml:lang="zxx">aym</skos:prefLabel>
+		<skos:definition xml:lang="eng">Aymara</skos:definition>
+		<skos:definition xml:lang="fre">aymara</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/38">
+		<skos:prefLabel xml:lang="zxx">aze</skos:prefLabel>
+		<skos:definition xml:lang="eng">Azerbaijani</skos:definition>
+		<skos:definition xml:lang="fre">azri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/39">
+		<skos:prefLabel xml:lang="zxx">ban</skos:prefLabel>
+		<skos:definition xml:lang="eng">Balinese</skos:definition>
+		<skos:definition xml:lang="fre">balinais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/40">
+		<skos:prefLabel xml:lang="zxx">bat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Baltic languages</skos:definition>
+		<skos:definition xml:lang="fre">baltes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/41">
+		<skos:prefLabel xml:lang="zxx">bal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Baluchi</skos:definition>
+		<skos:definition xml:lang="fre">baloutchi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/42">
+		<skos:prefLabel xml:lang="zxx">bam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bambara</skos:definition>
+		<skos:definition xml:lang="fre">bambara</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/43">
+		<skos:prefLabel xml:lang="zxx">bai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bamileke languages</skos:definition>
+		<skos:definition xml:lang="fre">bamilk, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/44">
+		<skos:prefLabel xml:lang="zxx">bad</skos:prefLabel>
+		<skos:definition xml:lang="eng">Banda languages</skos:definition>
+		<skos:definition xml:lang="fre">banda, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/45">
+		<skos:prefLabel xml:lang="zxx">bnt</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bantu languages</skos:definition>
+		<skos:definition xml:lang="fre">bantou, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/46">
+		<skos:prefLabel xml:lang="zxx">bas</skos:prefLabel>
+		<skos:definition xml:lang="eng">Basa</skos:definition>
+		<skos:definition xml:lang="fre">basa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/47">
+		<skos:prefLabel xml:lang="zxx">bak</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bashkir</skos:definition>
+		<skos:definition xml:lang="fre">bachkir</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/48">
+		<skos:prefLabel xml:lang="zxx">baq</skos:prefLabel>
+		<skos:definition xml:lang="eng">Basque</skos:definition>
+		<skos:definition xml:lang="fre">basque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/49">
+		<skos:prefLabel xml:lang="zxx">eus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Basque</skos:definition>
+		<skos:definition xml:lang="fre">basque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/50">
+		<skos:prefLabel xml:lang="zxx">btk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Batak languages</skos:definition>
+		<skos:definition xml:lang="fre">batak, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/51">
+		<skos:prefLabel xml:lang="zxx">bej</skos:prefLabel>
+		<skos:definition xml:lang="eng">Beja; Bedawiyet</skos:definition>
+		<skos:definition xml:lang="fre">bedja</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/52">
+		<skos:prefLabel xml:lang="zxx">bel</skos:prefLabel>
+		<skos:definition xml:lang="eng">Belarusian</skos:definition>
+		<skos:definition xml:lang="fre">bilorusse</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/53">
+		<skos:prefLabel xml:lang="zxx">bem</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bemba</skos:definition>
+		<skos:definition xml:lang="fre">bemba</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/54">
+		<skos:prefLabel xml:lang="zxx">ben</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bengali</skos:definition>
+		<skos:definition xml:lang="fre">bengali</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/55">
+		<skos:prefLabel xml:lang="zxx">ber</skos:prefLabel>
+		<skos:definition xml:lang="eng">Berber languages</skos:definition>
+		<skos:definition xml:lang="fre">berbres, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/56">
+		<skos:prefLabel xml:lang="zxx">bho</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bhojpuri</skos:definition>
+		<skos:definition xml:lang="fre">bhojpuri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/57">
+		<skos:prefLabel xml:lang="zxx">bih</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bihari languages</skos:definition>
+		<skos:definition xml:lang="fre">langues biharis</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/58">
+		<skos:prefLabel xml:lang="zxx">bik</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bikol</skos:definition>
+		<skos:definition xml:lang="fre">bikol</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/59">
+		<skos:prefLabel xml:lang="zxx">bin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bini; Edo</skos:definition>
+		<skos:definition xml:lang="fre">bini; edo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/60">
+		<skos:prefLabel xml:lang="zxx">bis</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bislama</skos:definition>
+		<skos:definition xml:lang="fre">bichlamar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/61">
+		<skos:prefLabel xml:lang="zxx">byn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Blin; Bilin</skos:definition>
+		<skos:definition xml:lang="fre">blin; bilen</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/62">
+		<skos:prefLabel xml:lang="zxx">zbl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Blissymbols; Blissymbolics; Bliss</skos:definition>
+		<skos:definition xml:lang="fre">symboles Bliss; Bliss</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/63">
+		<skos:prefLabel xml:lang="zxx">nob</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bokml, Norwegian; Norwegian Bokml</skos:definition>
+		<skos:definition xml:lang="fre">norvgien bokml</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/64">
+		<skos:prefLabel xml:lang="zxx">bos</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bosnian</skos:definition>
+		<skos:definition xml:lang="fre">bosniaque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/65">
+		<skos:prefLabel xml:lang="zxx">bra</skos:prefLabel>
+		<skos:definition xml:lang="eng">Braj</skos:definition>
+		<skos:definition xml:lang="fre">braj</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/66">
+		<skos:prefLabel xml:lang="zxx">bre</skos:prefLabel>
+		<skos:definition xml:lang="eng">Breton</skos:definition>
+		<skos:definition xml:lang="fre">breton</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/67">
+		<skos:prefLabel xml:lang="zxx">bug</skos:prefLabel>
+		<skos:definition xml:lang="eng">Buginese</skos:definition>
+		<skos:definition xml:lang="fre">bugi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/68">
+		<skos:prefLabel xml:lang="zxx">bul</skos:prefLabel>
+		<skos:definition xml:lang="eng">Bulgarian</skos:definition>
+		<skos:definition xml:lang="fre">bulgare</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/69">
+		<skos:prefLabel xml:lang="zxx">bua</skos:prefLabel>
+		<skos:definition xml:lang="eng">Buriat</skos:definition>
+		<skos:definition xml:lang="fre">bouriate</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/70">
+		<skos:prefLabel xml:lang="zxx">bur</skos:prefLabel>
+		<skos:definition xml:lang="eng">Burmese</skos:definition>
+		<skos:definition xml:lang="fre">birman</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/71">
+		<skos:prefLabel xml:lang="zxx">mya</skos:prefLabel>
+		<skos:definition xml:lang="eng">Burmese</skos:definition>
+		<skos:definition xml:lang="fre">birman</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/72">
+		<skos:prefLabel xml:lang="zxx">cad</skos:prefLabel>
+		<skos:definition xml:lang="eng">Caddo</skos:definition>
+		<skos:definition xml:lang="fre">caddo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/73">
+		<skos:prefLabel xml:lang="zxx">cat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Catalan; Valencian</skos:definition>
+		<skos:definition xml:lang="fre">catalan; valencien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/74">
+		<skos:prefLabel xml:lang="zxx">cau</skos:prefLabel>
+		<skos:definition xml:lang="eng">Caucasian languages</skos:definition>
+		<skos:definition xml:lang="fre">caucasiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/75">
+		<skos:prefLabel xml:lang="zxx">ceb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cebuano</skos:definition>
+		<skos:definition xml:lang="fre">cebuano</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/76">
+		<skos:prefLabel xml:lang="zxx">cel</skos:prefLabel>
+		<skos:definition xml:lang="eng">Celtic languages</skos:definition>
+		<skos:definition xml:lang="fre">celtiques, langues; celtes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/77">
+		<skos:prefLabel xml:lang="zxx">cai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Central American Indian languages</skos:definition>
+		<skos:definition xml:lang="fre">amrindiennes de l'Amrique centrale, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/78">
+		<skos:prefLabel xml:lang="zxx">khm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Central Khmer</skos:definition>
+		<skos:definition xml:lang="fre">khmer central</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/79">
+		<skos:prefLabel xml:lang="zxx">chg</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chagatai</skos:definition>
+		<skos:definition xml:lang="fre">djaghata</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/80">
+		<skos:prefLabel xml:lang="zxx">cmc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chamic languages</skos:definition>
+		<skos:definition xml:lang="fre">chames, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/81">
+		<skos:prefLabel xml:lang="zxx">cha</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chamorro</skos:definition>
+		<skos:definition xml:lang="fre">chamorro</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/82">
+		<skos:prefLabel xml:lang="zxx">che</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chechen</skos:definition>
+		<skos:definition xml:lang="fre">tchtchne</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/83">
+		<skos:prefLabel xml:lang="zxx">chr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cherokee</skos:definition>
+		<skos:definition xml:lang="fre">cherokee</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/84">
+		<skos:prefLabel xml:lang="zxx">chy</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cheyenne</skos:definition>
+		<skos:definition xml:lang="fre">cheyenne</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/85">
+		<skos:prefLabel xml:lang="zxx">chb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chibcha</skos:definition>
+		<skos:definition xml:lang="fre">chibcha</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/86">
+		<skos:prefLabel xml:lang="zxx">nya</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chichewa; Chewa; Nyanja</skos:definition>
+		<skos:definition xml:lang="fre">chichewa; chewa; nyanja</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/87">
+		<skos:prefLabel xml:lang="zxx">chi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chinese</skos:definition>
+		<skos:definition xml:lang="fre">chinois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/88">
+		<skos:prefLabel xml:lang="zxx">zho</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chinese</skos:definition>
+		<skos:definition xml:lang="fre">chinois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/89">
+		<skos:prefLabel xml:lang="zxx">chn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chinook jargon</skos:definition>
+		<skos:definition xml:lang="fre">chinook, jargon</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/90">
+		<skos:prefLabel xml:lang="zxx">chp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chipewyan; Dene Suline</skos:definition>
+		<skos:definition xml:lang="fre">chipewyan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/91">
+		<skos:prefLabel xml:lang="zxx">cho</skos:prefLabel>
+		<skos:definition xml:lang="eng">Choctaw</skos:definition>
+		<skos:definition xml:lang="fre">choctaw</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/92">
+		<skos:prefLabel xml:lang="zxx">chu</skos:prefLabel>
+		<skos:definition xml:lang="eng">Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic</skos:definition>
+		<skos:definition xml:lang="fre">slavon d'glise; vieux slave; slavon liturgique; vieux bulgare</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/93">
+		<skos:prefLabel xml:lang="zxx">chk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chuukese</skos:definition>
+		<skos:definition xml:lang="fre">chuuk</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/94">
+		<skos:prefLabel xml:lang="zxx">chv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Chuvash</skos:definition>
+		<skos:definition xml:lang="fre">tchouvache</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/95">
+		<skos:prefLabel xml:lang="zxx">nwc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Classical Newari; Old Newari; Classical Nepal Bhasa</skos:definition>
+		<skos:definition xml:lang="fre">newari classique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/96">
+		<skos:prefLabel xml:lang="zxx">syc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Classical Syriac</skos:definition>
+		<skos:definition xml:lang="fre">syriaque classique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/97">
+		<skos:prefLabel xml:lang="zxx">cop</skos:prefLabel>
+		<skos:definition xml:lang="eng">Coptic</skos:definition>
+		<skos:definition xml:lang="fre">copte</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/98">
+		<skos:prefLabel xml:lang="zxx">cor</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cornish</skos:definition>
+		<skos:definition xml:lang="fre">cornique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/99">
+		<skos:prefLabel xml:lang="zxx">cos</skos:prefLabel>
+		<skos:definition xml:lang="eng">Corsican</skos:definition>
+		<skos:definition xml:lang="fre">corse</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/100">
+		<skos:prefLabel xml:lang="zxx">cre</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cree</skos:definition>
+		<skos:definition xml:lang="fre">cree</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/101">
+		<skos:prefLabel xml:lang="zxx">mus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Creek</skos:definition>
+		<skos:definition xml:lang="fre">muskogee</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/102">
+		<skos:prefLabel xml:lang="zxx">cpe</skos:prefLabel>
+		<skos:definition xml:lang="eng">Creoles and pidgins, English based</skos:definition>
+		<skos:definition xml:lang="fre">croles et pidgins bass sur l'anglais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/103">
+		<skos:prefLabel xml:lang="zxx">cpf</skos:prefLabel>
+		<skos:definition xml:lang="eng">Creoles and pidgins, French-based</skos:definition>
+		<skos:definition xml:lang="fre">croles et pidgins bass sur le franais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/104">
+		<skos:prefLabel xml:lang="zxx">cpp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Creoles and pidgins, Portuguese-based</skos:definition>
+		<skos:definition xml:lang="fre">croles et pidgins bass sur le portugais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/105">
+		<skos:prefLabel xml:lang="zxx">crp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Creoles and pidgins</skos:definition>
+		<skos:definition xml:lang="fre">croles et pidgins</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/106">
+		<skos:prefLabel xml:lang="zxx">crh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Crimean Tatar; Crimean Turkish</skos:definition>
+		<skos:definition xml:lang="fre">tatar de Crim</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/107">
+		<skos:prefLabel xml:lang="zxx">hrv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Croatian</skos:definition>
+		<skos:definition xml:lang="fre">croate</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/108">
+		<skos:prefLabel xml:lang="zxx">cus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Cushitic languages</skos:definition>
+		<skos:definition xml:lang="fre">couchitiques, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/109">
+		<skos:prefLabel xml:lang="zxx">ces</skos:prefLabel>
+		<skos:definition xml:lang="eng">Czech</skos:definition>
+		<skos:definition xml:lang="fre">tchque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/110">
+		<skos:prefLabel xml:lang="zxx">cze</skos:prefLabel>
+		<skos:definition xml:lang="eng">Czech</skos:definition>
+		<skos:definition xml:lang="fre">tchque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/111">
+		<skos:prefLabel xml:lang="zxx">dak</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dakota</skos:definition>
+		<skos:definition xml:lang="fre">dakota</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/112">
+		<skos:prefLabel xml:lang="zxx">dan</skos:prefLabel>
+		<skos:definition xml:lang="eng">Danish</skos:definition>
+		<skos:definition xml:lang="fre">danois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/113">
+		<skos:prefLabel xml:lang="zxx">dar</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dargwa</skos:definition>
+		<skos:definition xml:lang="fre">dargwa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/114">
+		<skos:prefLabel xml:lang="zxx">del</skos:prefLabel>
+		<skos:definition xml:lang="eng">Delaware</skos:definition>
+		<skos:definition xml:lang="fre">delaware</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/115">
+		<skos:prefLabel xml:lang="zxx">din</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dinka</skos:definition>
+		<skos:definition xml:lang="fre">dinka</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/116">
+		<skos:prefLabel xml:lang="zxx">div</skos:prefLabel>
+		<skos:definition xml:lang="eng">Divehi; Dhivehi; Maldivian</skos:definition>
+		<skos:definition xml:lang="fre">maldivien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/117">
+		<skos:prefLabel xml:lang="zxx">doi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dogri</skos:definition>
+		<skos:definition xml:lang="fre">dogri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/118">
+		<skos:prefLabel xml:lang="zxx">dgr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dogrib</skos:definition>
+		<skos:definition xml:lang="fre">dogrib</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/119">
+		<skos:prefLabel xml:lang="zxx">dra</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dravidian languages</skos:definition>
+		<skos:definition xml:lang="fre">dravidiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/120">
+		<skos:prefLabel xml:lang="zxx">dua</skos:prefLabel>
+		<skos:definition xml:lang="eng">Duala</skos:definition>
+		<skos:definition xml:lang="fre">douala</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/121">
+		<skos:prefLabel xml:lang="zxx">dum</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dutch, Middle (ca.1050-1350)</skos:definition>
+		<skos:definition xml:lang="fre">nerlandais moyen (ca. 1050-1350)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/122">
+		<skos:prefLabel xml:lang="zxx">dut</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dutch; Flemish</skos:definition>
+		<skos:definition xml:lang="fre">nerlandais; flamand</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/123">
+		<skos:prefLabel xml:lang="zxx">nld</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dutch; Flemish</skos:definition>
+		<skos:definition xml:lang="fre">nerlandais; flamand</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/124">
+		<skos:prefLabel xml:lang="zxx">dyu</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dyula</skos:definition>
+		<skos:definition xml:lang="fre">dioula</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/125">
+		<skos:prefLabel xml:lang="zxx">dzo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Dzongkha</skos:definition>
+		<skos:definition xml:lang="fre">dzongkha</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/126">
+		<skos:prefLabel xml:lang="zxx">frs</skos:prefLabel>
+		<skos:definition xml:lang="eng">Eastern Frisian</skos:definition>
+		<skos:definition xml:lang="fre">frison oriental</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/127">
+		<skos:prefLabel xml:lang="zxx">efi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Efik</skos:definition>
+		<skos:definition xml:lang="fre">efik</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/128">
+		<skos:prefLabel xml:lang="zxx">egy</skos:prefLabel>
+		<skos:definition xml:lang="eng">Egyptian (Ancient)</skos:definition>
+		<skos:definition xml:lang="fre">gyptien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/129">
+		<skos:prefLabel xml:lang="zxx">eka</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ekajuk</skos:definition>
+		<skos:definition xml:lang="fre">ekajuk</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/130">
+		<skos:prefLabel xml:lang="zxx">elx</skos:prefLabel>
+		<skos:definition xml:lang="eng">Elamite</skos:definition>
+		<skos:definition xml:lang="fre">lamite</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/131">
+		<skos:prefLabel xml:lang="zxx">enm</skos:prefLabel>
+		<skos:definition xml:lang="eng">English, Middle (1100-1500)</skos:definition>
+		<skos:definition xml:lang="fre">anglais moyen (1100-1500)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/132">
+		<skos:prefLabel xml:lang="zxx">ang</skos:prefLabel>
+		<skos:definition xml:lang="eng">English, Old (ca.450-1100)</skos:definition>
+		<skos:definition xml:lang="fre">anglo-saxon (ca.450-1100)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/133">
+		<skos:prefLabel xml:lang="zxx">eng</skos:prefLabel>
+		<skos:definition xml:lang="eng">English</skos:definition>
+		<skos:definition xml:lang="fre">anglais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/134">
+		<skos:prefLabel xml:lang="zxx">myv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Erzya</skos:definition>
+		<skos:definition xml:lang="fre">erza</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/135">
+		<skos:prefLabel xml:lang="zxx">epo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Esperanto</skos:definition>
+		<skos:definition xml:lang="fre">espranto</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/136">
+		<skos:prefLabel xml:lang="zxx">est</skos:prefLabel>
+		<skos:definition xml:lang="eng">Estonian</skos:definition>
+		<skos:definition xml:lang="fre">estonien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/137">
+		<skos:prefLabel xml:lang="zxx">ewe</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ewe</skos:definition>
+		<skos:definition xml:lang="fre">w</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/138">
+		<skos:prefLabel xml:lang="zxx">ewo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ewondo</skos:definition>
+		<skos:definition xml:lang="fre">wondo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/139">
+		<skos:prefLabel xml:lang="zxx">fan</skos:prefLabel>
+		<skos:definition xml:lang="eng">Fang</skos:definition>
+		<skos:definition xml:lang="fre">fang</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/140">
+		<skos:prefLabel xml:lang="zxx">fat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Fanti</skos:definition>
+		<skos:definition xml:lang="fre">fanti</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/141">
+		<skos:prefLabel xml:lang="zxx">fao</skos:prefLabel>
+		<skos:definition xml:lang="eng">Faroese</skos:definition>
+		<skos:definition xml:lang="fre">froen</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/142">
+		<skos:prefLabel xml:lang="zxx">fij</skos:prefLabel>
+		<skos:definition xml:lang="eng">Fijian</skos:definition>
+		<skos:definition xml:lang="fre">fidjien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/143">
+		<skos:prefLabel xml:lang="zxx">fil</skos:prefLabel>
+		<skos:definition xml:lang="eng">Filipino; Pilipino</skos:definition>
+		<skos:definition xml:lang="fre">filipino; pilipino</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/144">
+		<skos:prefLabel xml:lang="zxx">fin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Finnish</skos:definition>
+		<skos:definition xml:lang="fre">finnois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/145">
+		<skos:prefLabel xml:lang="zxx">fiu</skos:prefLabel>
+		<skos:definition xml:lang="eng">Finno-Ugrian languages</skos:definition>
+		<skos:definition xml:lang="fre">finno-ougriennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/146">
+		<skos:prefLabel xml:lang="zxx">fon</skos:prefLabel>
+		<skos:definition xml:lang="eng">Fon</skos:definition>
+		<skos:definition xml:lang="fre">fon</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/147">
+		<skos:prefLabel xml:lang="zxx">frm</skos:prefLabel>
+		<skos:definition xml:lang="eng">French, Middle (ca.1400-1600)</skos:definition>
+		<skos:definition xml:lang="fre">franais moyen (1400-1600)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/148">
+		<skos:prefLabel xml:lang="zxx">fro</skos:prefLabel>
+		<skos:definition xml:lang="eng">French, Old (842-ca.1400)</skos:definition>
+		<skos:definition xml:lang="fre">franais ancien (842-ca.1400)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/149">
+		<skos:prefLabel xml:lang="zxx">fra</skos:prefLabel>
+		<skos:definition xml:lang="eng">French</skos:definition>
+		<skos:definition xml:lang="fre">franais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/150">
+		<skos:prefLabel xml:lang="zxx">fre</skos:prefLabel>
+		<skos:definition xml:lang="eng">French</skos:definition>
+		<skos:definition xml:lang="fre">franais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/151">
+		<skos:prefLabel xml:lang="zxx">fur</skos:prefLabel>
+		<skos:definition xml:lang="eng">Friulian</skos:definition>
+		<skos:definition xml:lang="fre">frioulan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/152">
+		<skos:prefLabel xml:lang="zxx">ful</skos:prefLabel>
+		<skos:definition xml:lang="eng">Fulah</skos:definition>
+		<skos:definition xml:lang="fre">peul</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/153">
+		<skos:prefLabel xml:lang="zxx">gaa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ga</skos:definition>
+		<skos:definition xml:lang="fre">ga</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/154">
+		<skos:prefLabel xml:lang="zxx">gla</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gaelic; Scottish Gaelic</skos:definition>
+		<skos:definition xml:lang="fre">galique; galique cossais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/155">
+		<skos:prefLabel xml:lang="zxx">car</skos:prefLabel>
+		<skos:definition xml:lang="eng">Galibi Carib</skos:definition>
+		<skos:definition xml:lang="fre">karib; galibi; carib</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/156">
+		<skos:prefLabel xml:lang="zxx">glg</skos:prefLabel>
+		<skos:definition xml:lang="eng">Galician</skos:definition>
+		<skos:definition xml:lang="fre">galicien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/157">
+		<skos:prefLabel xml:lang="zxx">lug</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ganda</skos:definition>
+		<skos:definition xml:lang="fre">ganda</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/158">
+		<skos:prefLabel xml:lang="zxx">gay</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gayo</skos:definition>
+		<skos:definition xml:lang="fre">gayo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/159">
+		<skos:prefLabel xml:lang="zxx">gba</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gbaya</skos:definition>
+		<skos:definition xml:lang="fre">gbaya</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/160">
+		<skos:prefLabel xml:lang="zxx">gez</skos:prefLabel>
+		<skos:definition xml:lang="eng">Geez</skos:definition>
+		<skos:definition xml:lang="fre">guze</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/161">
+		<skos:prefLabel xml:lang="zxx">geo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Georgian</skos:definition>
+		<skos:definition xml:lang="fre">gorgien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/162">
+		<skos:prefLabel xml:lang="zxx">kat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Georgian</skos:definition>
+		<skos:definition xml:lang="fre">gorgien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/163">
+		<skos:prefLabel xml:lang="zxx">gmh</skos:prefLabel>
+		<skos:definition xml:lang="eng">German, Middle High (ca.1050-1500)</skos:definition>
+		<skos:definition xml:lang="fre">allemand, moyen haut (ca. 1050-1500)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/164">
+		<skos:prefLabel xml:lang="zxx">goh</skos:prefLabel>
+		<skos:definition xml:lang="eng">German, Old High (ca.750-1050)</skos:definition>
+		<skos:definition xml:lang="fre">allemand, vieux haut (ca. 750-1050)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/165">
+		<skos:prefLabel xml:lang="zxx">deu</skos:prefLabel>
+		<skos:definition xml:lang="eng">German</skos:definition>
+		<skos:definition xml:lang="fre">allemand</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/166">
+		<skos:prefLabel xml:lang="zxx">ger</skos:prefLabel>
+		<skos:definition xml:lang="eng">German</skos:definition>
+		<skos:definition xml:lang="fre">allemand</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/167">
+		<skos:prefLabel xml:lang="zxx">gem</skos:prefLabel>
+		<skos:definition xml:lang="eng">Germanic languages</skos:definition>
+		<skos:definition xml:lang="fre">germaniques, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/168">
+		<skos:prefLabel xml:lang="zxx">gil</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gilbertese</skos:definition>
+		<skos:definition xml:lang="fre">kiribati</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/169">
+		<skos:prefLabel xml:lang="zxx">gon</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gondi</skos:definition>
+		<skos:definition xml:lang="fre">gond</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/170">
+		<skos:prefLabel xml:lang="zxx">gor</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gorontalo</skos:definition>
+		<skos:definition xml:lang="fre">gorontalo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/171">
+		<skos:prefLabel xml:lang="zxx">got</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gothic</skos:definition>
+		<skos:definition xml:lang="fre">gothique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/172">
+		<skos:prefLabel xml:lang="zxx">grb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Grebo</skos:definition>
+		<skos:definition xml:lang="fre">grebo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/173">
+		<skos:prefLabel xml:lang="zxx">grc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Greek, Ancient (to 1453)</skos:definition>
+		<skos:definition xml:lang="fre">grec ancien (jusqu' 1453)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/174">
+		<skos:prefLabel xml:lang="zxx">ell</skos:prefLabel>
+		<skos:definition xml:lang="eng">Greek, Modern (1453-)</skos:definition>
+		<skos:definition xml:lang="fre">grec moderne (aprs 1453)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/175">
+		<skos:prefLabel xml:lang="zxx">gre</skos:prefLabel>
+		<skos:definition xml:lang="eng">Greek, Modern (1453-)</skos:definition>
+		<skos:definition xml:lang="fre">grec moderne (aprs 1453)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/176">
+		<skos:prefLabel xml:lang="zxx">grn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Guarani</skos:definition>
+		<skos:definition xml:lang="fre">guarani</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/177">
+		<skos:prefLabel xml:lang="zxx">guj</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gujarati</skos:definition>
+		<skos:definition xml:lang="fre">goudjrati</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/178">
+		<skos:prefLabel xml:lang="zxx">gwi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Gwich'in</skos:definition>
+		<skos:definition xml:lang="fre">gwich'in</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/179">
+		<skos:prefLabel xml:lang="zxx">hai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Haida</skos:definition>
+		<skos:definition xml:lang="fre">haida</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/180">
+		<skos:prefLabel xml:lang="zxx">hat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Haitian; Haitian Creole</skos:definition>
+		<skos:definition xml:lang="fre">hatien; crole hatien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/181">
+		<skos:prefLabel xml:lang="zxx">hau</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hausa</skos:definition>
+		<skos:definition xml:lang="fre">haoussa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/182">
+		<skos:prefLabel xml:lang="zxx">haw</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hawaiian</skos:definition>
+		<skos:definition xml:lang="fre">hawaen</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/183">
+		<skos:prefLabel xml:lang="zxx">heb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hebrew</skos:definition>
+		<skos:definition xml:lang="fre">hbreu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/184">
+		<skos:prefLabel xml:lang="zxx">her</skos:prefLabel>
+		<skos:definition xml:lang="eng">Herero</skos:definition>
+		<skos:definition xml:lang="fre">herero</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/185">
+		<skos:prefLabel xml:lang="zxx">hil</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hiligaynon</skos:definition>
+		<skos:definition xml:lang="fre">hiligaynon</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/186">
+		<skos:prefLabel xml:lang="zxx">him</skos:prefLabel>
+		<skos:definition xml:lang="eng">Himachali languages; Western Pahari languages</skos:definition>
+		<skos:definition xml:lang="fre">langues himachalis; langues paharis occidentales</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/187">
+		<skos:prefLabel xml:lang="zxx">hin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hindi</skos:definition>
+		<skos:definition xml:lang="fre">hindi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/188">
+		<skos:prefLabel xml:lang="zxx">hmo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hiri Motu</skos:definition>
+		<skos:definition xml:lang="fre">hiri motu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/189">
+		<skos:prefLabel xml:lang="zxx">hit</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hittite</skos:definition>
+		<skos:definition xml:lang="fre">hittite</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/190">
+		<skos:prefLabel xml:lang="zxx">hmn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hmong; Mong</skos:definition>
+		<skos:definition xml:lang="fre">hmong</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/191">
+		<skos:prefLabel xml:lang="zxx">hun</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hungarian</skos:definition>
+		<skos:definition xml:lang="fre">hongrois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/192">
+		<skos:prefLabel xml:lang="zxx">hup</skos:prefLabel>
+		<skos:definition xml:lang="eng">Hupa</skos:definition>
+		<skos:definition xml:lang="fre">hupa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/193">
+		<skos:prefLabel xml:lang="zxx">iba</skos:prefLabel>
+		<skos:definition xml:lang="eng">Iban</skos:definition>
+		<skos:definition xml:lang="fre">iban</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/194">
+		<skos:prefLabel xml:lang="zxx">ice</skos:prefLabel>
+		<skos:definition xml:lang="eng">Icelandic</skos:definition>
+		<skos:definition xml:lang="fre">islandais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/195">
+		<skos:prefLabel xml:lang="zxx">isl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Icelandic</skos:definition>
+		<skos:definition xml:lang="fre">islandais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/196">
+		<skos:prefLabel xml:lang="zxx">ido</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ido</skos:definition>
+		<skos:definition xml:lang="fre">ido</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/197">
+		<skos:prefLabel xml:lang="zxx">ibo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Igbo</skos:definition>
+		<skos:definition xml:lang="fre">igbo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/198">
+		<skos:prefLabel xml:lang="zxx">ijo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ijo languages</skos:definition>
+		<skos:definition xml:lang="fre">ijo, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/199">
+		<skos:prefLabel xml:lang="zxx">ilo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Iloko</skos:definition>
+		<skos:definition xml:lang="fre">ilocano</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/200">
+		<skos:prefLabel xml:lang="zxx">smn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Inari Sami</skos:definition>
+		<skos:definition xml:lang="fre">sami d'Inari</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/201">
+		<skos:prefLabel xml:lang="zxx">inc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Indic languages</skos:definition>
+		<skos:definition xml:lang="fre">indo-aryennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/202">
+		<skos:prefLabel xml:lang="zxx">ine</skos:prefLabel>
+		<skos:definition xml:lang="eng">Indo-European languages</skos:definition>
+		<skos:definition xml:lang="fre">indo-europennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/203">
+		<skos:prefLabel xml:lang="zxx">ind</skos:prefLabel>
+		<skos:definition xml:lang="eng">Indonesian</skos:definition>
+		<skos:definition xml:lang="fre">indonsien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/204">
+		<skos:prefLabel xml:lang="zxx">inh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ingush</skos:definition>
+		<skos:definition xml:lang="fre">ingouche</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/205">
+		<skos:prefLabel xml:lang="zxx">ina</skos:prefLabel>
+		<skos:definition xml:lang="eng">Interlingua (International Auxiliary Language Association)</skos:definition>
+		<skos:definition xml:lang="fre">interlingua (langue auxiliaire internationale)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/206">
+		<skos:prefLabel xml:lang="zxx">ile</skos:prefLabel>
+		<skos:definition xml:lang="eng">Interlingue; Occidental</skos:definition>
+		<skos:definition xml:lang="fre">interlingue</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/207">
+		<skos:prefLabel xml:lang="zxx">iku</skos:prefLabel>
+		<skos:definition xml:lang="eng">Inuktitut</skos:definition>
+		<skos:definition xml:lang="fre">inuktitut</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/208">
+		<skos:prefLabel xml:lang="zxx">ipk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Inupiaq</skos:definition>
+		<skos:definition xml:lang="fre">inupiaq</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/209">
+		<skos:prefLabel xml:lang="zxx">ira</skos:prefLabel>
+		<skos:definition xml:lang="eng">Iranian languages</skos:definition>
+		<skos:definition xml:lang="fre">iraniennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/210">
+		<skos:prefLabel xml:lang="zxx">mga</skos:prefLabel>
+		<skos:definition xml:lang="eng">Irish, Middle (900-1200)</skos:definition>
+		<skos:definition xml:lang="fre">irlandais moyen (900-1200)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/211">
+		<skos:prefLabel xml:lang="zxx">sga</skos:prefLabel>
+		<skos:definition xml:lang="eng">Irish, Old (to 900)</skos:definition>
+		<skos:definition xml:lang="fre">irlandais ancien (jusqu' 900)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/212">
+		<skos:prefLabel xml:lang="zxx">gle</skos:prefLabel>
+		<skos:definition xml:lang="eng">Irish</skos:definition>
+		<skos:definition xml:lang="fre">irlandais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/213">
+		<skos:prefLabel xml:lang="zxx">iro</skos:prefLabel>
+		<skos:definition xml:lang="eng">Iroquoian languages</skos:definition>
+		<skos:definition xml:lang="fre">iroquoises, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/214">
+		<skos:prefLabel xml:lang="zxx">ita</skos:prefLabel>
+		<skos:definition xml:lang="eng">Italian</skos:definition>
+		<skos:definition xml:lang="fre">italien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/215">
+		<skos:prefLabel xml:lang="zxx">jpn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Japanese</skos:definition>
+		<skos:definition xml:lang="fre">japonais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/216">
+		<skos:prefLabel xml:lang="zxx">jav</skos:prefLabel>
+		<skos:definition xml:lang="eng">Javanese</skos:definition>
+		<skos:definition xml:lang="fre">javanais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/217">
+		<skos:prefLabel xml:lang="zxx">jrb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Judeo-Arabic</skos:definition>
+		<skos:definition xml:lang="fre">judo-arabe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/218">
+		<skos:prefLabel xml:lang="zxx">jpr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Judeo-Persian</skos:definition>
+		<skos:definition xml:lang="fre">judo-persan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/219">
+		<skos:prefLabel xml:lang="zxx">kbd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kabardian</skos:definition>
+		<skos:definition xml:lang="fre">kabardien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/220">
+		<skos:prefLabel xml:lang="zxx">kab</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kabyle</skos:definition>
+		<skos:definition xml:lang="fre">kabyle</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/221">
+		<skos:prefLabel xml:lang="zxx">kac</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kachin; Jingpho</skos:definition>
+		<skos:definition xml:lang="fre">kachin; jingpho</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/222">
+		<skos:prefLabel xml:lang="zxx">kal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kalaallisut; Greenlandic</skos:definition>
+		<skos:definition xml:lang="fre">groenlandais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/223">
+		<skos:prefLabel xml:lang="zxx">xal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kalmyk; Oirat</skos:definition>
+		<skos:definition xml:lang="fre">kalmouk; orat</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/224">
+		<skos:prefLabel xml:lang="zxx">kam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kamba</skos:definition>
+		<skos:definition xml:lang="fre">kamba</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/225">
+		<skos:prefLabel xml:lang="zxx">kan</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kannada</skos:definition>
+		<skos:definition xml:lang="fre">kannada</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/226">
+		<skos:prefLabel xml:lang="zxx">kau</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kanuri</skos:definition>
+		<skos:definition xml:lang="fre">kanouri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/227">
+		<skos:prefLabel xml:lang="zxx">krc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Karachay-Balkar</skos:definition>
+		<skos:definition xml:lang="fre">karatchai balkar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/228">
+		<skos:prefLabel xml:lang="zxx">kaa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kara-Kalpak</skos:definition>
+		<skos:definition xml:lang="fre">karakalpak</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/229">
+		<skos:prefLabel xml:lang="zxx">krl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Karelian</skos:definition>
+		<skos:definition xml:lang="fre">carlien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/230">
+		<skos:prefLabel xml:lang="zxx">kar</skos:prefLabel>
+		<skos:definition xml:lang="eng">Karen languages</skos:definition>
+		<skos:definition xml:lang="fre">karen, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/231">
+		<skos:prefLabel xml:lang="zxx">kas</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kashmiri</skos:definition>
+		<skos:definition xml:lang="fre">kashmiri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/232">
+		<skos:prefLabel xml:lang="zxx">csb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kashubian</skos:definition>
+		<skos:definition xml:lang="fre">kachoube</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/233">
+		<skos:prefLabel xml:lang="zxx">kaw</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kawi</skos:definition>
+		<skos:definition xml:lang="fre">kawi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/234">
+		<skos:prefLabel xml:lang="zxx">kaz</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kazakh</skos:definition>
+		<skos:definition xml:lang="fre">kazakh</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/235">
+		<skos:prefLabel xml:lang="zxx">kha</skos:prefLabel>
+		<skos:definition xml:lang="eng">Khasi</skos:definition>
+		<skos:definition xml:lang="fre">khasi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/236">
+		<skos:prefLabel xml:lang="zxx">khi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Khoisan languages</skos:definition>
+		<skos:definition xml:lang="fre">khosan, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/237">
+		<skos:prefLabel xml:lang="zxx">kho</skos:prefLabel>
+		<skos:definition xml:lang="eng">Khotanese; Sakan</skos:definition>
+		<skos:definition xml:lang="fre">khotanais; sakan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/238">
+		<skos:prefLabel xml:lang="zxx">kik</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kikuyu; Gikuyu</skos:definition>
+		<skos:definition xml:lang="fre">kikuyu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/239">
+		<skos:prefLabel xml:lang="zxx">kmb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kimbundu</skos:definition>
+		<skos:definition xml:lang="fre">kimbundu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/240">
+		<skos:prefLabel xml:lang="zxx">kin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kinyarwanda</skos:definition>
+		<skos:definition xml:lang="fre">rwanda</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/241">
+		<skos:prefLabel xml:lang="zxx">kir</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kirghiz; Kyrgyz</skos:definition>
+		<skos:definition xml:lang="fre">kirghiz</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/242">
+		<skos:prefLabel xml:lang="zxx">tlh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Klingon; tlhIngan-Hol</skos:definition>
+		<skos:definition xml:lang="fre">klingon</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/243">
+		<skos:prefLabel xml:lang="zxx">kom</skos:prefLabel>
+		<skos:definition xml:lang="eng">Komi</skos:definition>
+		<skos:definition xml:lang="fre">kom</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/244">
+		<skos:prefLabel xml:lang="zxx">kon</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kongo</skos:definition>
+		<skos:definition xml:lang="fre">kongo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/245">
+		<skos:prefLabel xml:lang="zxx">kok</skos:prefLabel>
+		<skos:definition xml:lang="eng">Konkani</skos:definition>
+		<skos:definition xml:lang="fre">konkani</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/246">
+		<skos:prefLabel xml:lang="zxx">kor</skos:prefLabel>
+		<skos:definition xml:lang="eng">Korean</skos:definition>
+		<skos:definition xml:lang="fre">coren</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/247">
+		<skos:prefLabel xml:lang="zxx">kos</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kosraean</skos:definition>
+		<skos:definition xml:lang="fre">kosrae</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/248">
+		<skos:prefLabel xml:lang="zxx">kpe</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kpelle</skos:definition>
+		<skos:definition xml:lang="fre">kpell</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/249">
+		<skos:prefLabel xml:lang="zxx">kro</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kru languages</skos:definition>
+		<skos:definition xml:lang="fre">krou, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/250">
+		<skos:prefLabel xml:lang="zxx">kua</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kuanyama; Kwanyama</skos:definition>
+		<skos:definition xml:lang="fre">kuanyama; kwanyama</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/251">
+		<skos:prefLabel xml:lang="zxx">kum</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kumyk</skos:definition>
+		<skos:definition xml:lang="fre">koumyk</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/252">
+		<skos:prefLabel xml:lang="zxx">kur</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kurdish</skos:definition>
+		<skos:definition xml:lang="fre">kurde</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/253">
+		<skos:prefLabel xml:lang="zxx">kru</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kurukh</skos:definition>
+		<skos:definition xml:lang="fre">kurukh</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/254">
+		<skos:prefLabel xml:lang="zxx">kut</skos:prefLabel>
+		<skos:definition xml:lang="eng">Kutenai</skos:definition>
+		<skos:definition xml:lang="fre">kutenai</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/255">
+		<skos:prefLabel xml:lang="zxx">lad</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ladino</skos:definition>
+		<skos:definition xml:lang="fre">judo-espagnol</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/256">
+		<skos:prefLabel xml:lang="zxx">lah</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lahnda</skos:definition>
+		<skos:definition xml:lang="fre">lahnda</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/257">
+		<skos:prefLabel xml:lang="zxx">lam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lamba</skos:definition>
+		<skos:definition xml:lang="fre">lamba</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/258">
+		<skos:prefLabel xml:lang="zxx">day</skos:prefLabel>
+		<skos:definition xml:lang="eng">Land Dayak languages</skos:definition>
+		<skos:definition xml:lang="fre">dayak, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/259">
+		<skos:prefLabel xml:lang="zxx">lao</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lao</skos:definition>
+		<skos:definition xml:lang="fre">lao</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/260">
+		<skos:prefLabel xml:lang="zxx">lat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Latin</skos:definition>
+		<skos:definition xml:lang="fre">latin</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/261">
+		<skos:prefLabel xml:lang="zxx">lav</skos:prefLabel>
+		<skos:definition xml:lang="eng">Latvian</skos:definition>
+		<skos:definition xml:lang="fre">letton</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/262">
+		<skos:prefLabel xml:lang="zxx">lez</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lezghian</skos:definition>
+		<skos:definition xml:lang="fre">lezghien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/263">
+		<skos:prefLabel xml:lang="zxx">lim</skos:prefLabel>
+		<skos:definition xml:lang="eng">Limburgan; Limburger; Limburgish</skos:definition>
+		<skos:definition xml:lang="fre">limbourgeois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/264">
+		<skos:prefLabel xml:lang="zxx">lin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lingala</skos:definition>
+		<skos:definition xml:lang="fre">lingala</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/265">
+		<skos:prefLabel xml:lang="zxx">lit</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lithuanian</skos:definition>
+		<skos:definition xml:lang="fre">lituanien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/266">
+		<skos:prefLabel xml:lang="zxx">jbo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lojban</skos:definition>
+		<skos:definition xml:lang="fre">lojban</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/267">
+		<skos:prefLabel xml:lang="zxx">nds</skos:prefLabel>
+		<skos:definition xml:lang="eng">Low German; Low Saxon; German, Low; Saxon, Low</skos:definition>
+		<skos:definition xml:lang="fre">bas allemand; bas saxon; allemand, bas; saxon, bas</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/268">
+		<skos:prefLabel xml:lang="zxx">dsb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lower Sorbian</skos:definition>
+		<skos:definition xml:lang="fre">bas-sorabe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/269">
+		<skos:prefLabel xml:lang="zxx">loz</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lozi</skos:definition>
+		<skos:definition xml:lang="fre">lozi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/270">
+		<skos:prefLabel xml:lang="zxx">lub</skos:prefLabel>
+		<skos:definition xml:lang="eng">Luba-Katanga</skos:definition>
+		<skos:definition xml:lang="fre">luba-katanga</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/271">
+		<skos:prefLabel xml:lang="zxx">lua</skos:prefLabel>
+		<skos:definition xml:lang="eng">Luba-Lulua</skos:definition>
+		<skos:definition xml:lang="fre">luba-lulua</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/272">
+		<skos:prefLabel xml:lang="zxx">lui</skos:prefLabel>
+		<skos:definition xml:lang="eng">Luiseno</skos:definition>
+		<skos:definition xml:lang="fre">luiseno</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/273">
+		<skos:prefLabel xml:lang="zxx">smj</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lule Sami</skos:definition>
+		<skos:definition xml:lang="fre">sami de Lule</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/274">
+		<skos:prefLabel xml:lang="zxx">lun</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lunda</skos:definition>
+		<skos:definition xml:lang="fre">lunda</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/275">
+		<skos:prefLabel xml:lang="zxx">luo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Luo (Kenya and Tanzania)</skos:definition>
+		<skos:definition xml:lang="fre">luo (Kenya et Tanzanie)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/276">
+		<skos:prefLabel xml:lang="zxx">lus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Lushai</skos:definition>
+		<skos:definition xml:lang="fre">lushai</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/277">
+		<skos:prefLabel xml:lang="zxx">ltz</skos:prefLabel>
+		<skos:definition xml:lang="eng">Luxembourgish; Letzeburgesch</skos:definition>
+		<skos:definition xml:lang="fre">luxembourgeois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/278">
+		<skos:prefLabel xml:lang="zxx">mac</skos:prefLabel>
+		<skos:definition xml:lang="eng">Macedonian</skos:definition>
+		<skos:definition xml:lang="fre">macdonien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/279">
+		<skos:prefLabel xml:lang="zxx">mkd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Macedonian</skos:definition>
+		<skos:definition xml:lang="fre">macdonien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/280">
+		<skos:prefLabel xml:lang="zxx">mad</skos:prefLabel>
+		<skos:definition xml:lang="eng">Madurese</skos:definition>
+		<skos:definition xml:lang="fre">madourais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/281">
+		<skos:prefLabel xml:lang="zxx">mag</skos:prefLabel>
+		<skos:definition xml:lang="eng">Magahi</skos:definition>
+		<skos:definition xml:lang="fre">magahi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/282">
+		<skos:prefLabel xml:lang="zxx">mai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Maithili</skos:definition>
+		<skos:definition xml:lang="fre">maithili</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/283">
+		<skos:prefLabel xml:lang="zxx">mak</skos:prefLabel>
+		<skos:definition xml:lang="eng">Makasar</skos:definition>
+		<skos:definition xml:lang="fre">makassar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/284">
+		<skos:prefLabel xml:lang="zxx">mlg</skos:prefLabel>
+		<skos:definition xml:lang="eng">Malagasy</skos:definition>
+		<skos:definition xml:lang="fre">malgache</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/285">
+		<skos:prefLabel xml:lang="zxx">may</skos:prefLabel>
+		<skos:definition xml:lang="eng">Malay</skos:definition>
+		<skos:definition xml:lang="fre">malais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/286">
+		<skos:prefLabel xml:lang="zxx">msa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Malay</skos:definition>
+		<skos:definition xml:lang="fre">malais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/287">
+		<skos:prefLabel xml:lang="zxx">mal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Malayalam</skos:definition>
+		<skos:definition xml:lang="fre">malayalam</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/288">
+		<skos:prefLabel xml:lang="zxx">mlt</skos:prefLabel>
+		<skos:definition xml:lang="eng">Maltese</skos:definition>
+		<skos:definition xml:lang="fre">maltais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/289">
+		<skos:prefLabel xml:lang="zxx">mnc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Manchu</skos:definition>
+		<skos:definition xml:lang="fre">mandchou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/290">
+		<skos:prefLabel xml:lang="zxx">mdr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mandar</skos:definition>
+		<skos:definition xml:lang="fre">mandar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/291">
+		<skos:prefLabel xml:lang="zxx">man</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mandingo</skos:definition>
+		<skos:definition xml:lang="fre">mandingue</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/292">
+		<skos:prefLabel xml:lang="zxx">mni</skos:prefLabel>
+		<skos:definition xml:lang="eng">Manipuri</skos:definition>
+		<skos:definition xml:lang="fre">manipuri</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/293">
+		<skos:prefLabel xml:lang="zxx">mno</skos:prefLabel>
+		<skos:definition xml:lang="eng">Manobo languages</skos:definition>
+		<skos:definition xml:lang="fre">manobo, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/294">
+		<skos:prefLabel xml:lang="zxx">glv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Manx</skos:definition>
+		<skos:definition xml:lang="fre">manx; mannois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/295">
+		<skos:prefLabel xml:lang="zxx">mao</skos:prefLabel>
+		<skos:definition xml:lang="eng">Maori</skos:definition>
+		<skos:definition xml:lang="fre">maori</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/296">
+		<skos:prefLabel xml:lang="zxx">mri</skos:prefLabel>
+		<skos:definition xml:lang="eng">Maori</skos:definition>
+		<skos:definition xml:lang="fre">maori</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/297">
+		<skos:prefLabel xml:lang="zxx">arn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mapudungun; Mapuche</skos:definition>
+		<skos:definition xml:lang="fre">mapudungun; mapuche; mapuce</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/298">
+		<skos:prefLabel xml:lang="zxx">mar</skos:prefLabel>
+		<skos:definition xml:lang="eng">Marathi</skos:definition>
+		<skos:definition xml:lang="fre">marathe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/299">
+		<skos:prefLabel xml:lang="zxx">chm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mari</skos:definition>
+		<skos:definition xml:lang="fre">mari</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/300">
+		<skos:prefLabel xml:lang="zxx">mah</skos:prefLabel>
+		<skos:definition xml:lang="eng">Marshallese</skos:definition>
+		<skos:definition xml:lang="fre">marshall</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/301">
+		<skos:prefLabel xml:lang="zxx">mwr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Marwari</skos:definition>
+		<skos:definition xml:lang="fre">marvari</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/302">
+		<skos:prefLabel xml:lang="zxx">mas</skos:prefLabel>
+		<skos:definition xml:lang="eng">Masai</skos:definition>
+		<skos:definition xml:lang="fre">massa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/303">
+		<skos:prefLabel xml:lang="zxx">myn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mayan languages</skos:definition>
+		<skos:definition xml:lang="fre">maya, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/304">
+		<skos:prefLabel xml:lang="zxx">men</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mende</skos:definition>
+		<skos:definition xml:lang="fre">mend</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/305">
+		<skos:prefLabel xml:lang="zxx">mic</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mi'kmaq; Micmac</skos:definition>
+		<skos:definition xml:lang="fre">mi'kmaq; micmac</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/306">
+		<skos:prefLabel xml:lang="zxx">min</skos:prefLabel>
+		<skos:definition xml:lang="eng">Minangkabau</skos:definition>
+		<skos:definition xml:lang="fre">minangkabau</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/307">
+		<skos:prefLabel xml:lang="zxx">mwl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mirandese</skos:definition>
+		<skos:definition xml:lang="fre">mirandais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/308">
+		<skos:prefLabel xml:lang="zxx">moh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mohawk</skos:definition>
+		<skos:definition xml:lang="fre">mohawk</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/309">
+		<skos:prefLabel xml:lang="zxx">mdf</skos:prefLabel>
+		<skos:definition xml:lang="eng">Moksha</skos:definition>
+		<skos:definition xml:lang="fre">moksa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/310">
+		<skos:prefLabel xml:lang="zxx">lol</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mongo</skos:definition>
+		<skos:definition xml:lang="fre">mongo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/311">
+		<skos:prefLabel xml:lang="zxx">mon</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mongolian</skos:definition>
+		<skos:definition xml:lang="fre">mongol</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/312">
+		<skos:prefLabel xml:lang="zxx">mkh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mon-Khmer languages</skos:definition>
+		<skos:definition xml:lang="fre">mn-khmer, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/313">
+		<skos:prefLabel xml:lang="zxx">mos</skos:prefLabel>
+		<skos:definition xml:lang="eng">Mossi</skos:definition>
+		<skos:definition xml:lang="fre">mor</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/314">
+		<skos:prefLabel xml:lang="zxx">mul</skos:prefLabel>
+		<skos:definition xml:lang="eng">Multiple languages</skos:definition>
+		<skos:definition xml:lang="fre">multilingue</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/315">
+		<skos:prefLabel xml:lang="zxx">mun</skos:prefLabel>
+		<skos:definition xml:lang="eng">Munda languages</skos:definition>
+		<skos:definition xml:lang="fre">mounda, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/316">
+		<skos:prefLabel xml:lang="zxx">nah</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nahuatl languages</skos:definition>
+		<skos:definition xml:lang="fre">nahuatl, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/317">
+		<skos:prefLabel xml:lang="zxx">nau</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nauru</skos:definition>
+		<skos:definition xml:lang="fre">nauruan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/318">
+		<skos:prefLabel xml:lang="zxx">nav</skos:prefLabel>
+		<skos:definition xml:lang="eng">Navajo; Navaho</skos:definition>
+		<skos:definition xml:lang="fre">navaho</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/319">
+		<skos:prefLabel xml:lang="zxx">nde</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ndebele, North; North Ndebele</skos:definition>
+		<skos:definition xml:lang="fre">ndbl du Nord</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/320">
+		<skos:prefLabel xml:lang="zxx">nbl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ndebele, South; South Ndebele</skos:definition>
+		<skos:definition xml:lang="fre">ndbl du Sud</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/321">
+		<skos:prefLabel xml:lang="zxx">ndo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ndonga</skos:definition>
+		<skos:definition xml:lang="fre">ndonga</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/322">
+		<skos:prefLabel xml:lang="zxx">nap</skos:prefLabel>
+		<skos:definition xml:lang="eng">Neapolitan</skos:definition>
+		<skos:definition xml:lang="fre">napolitain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/323">
+		<skos:prefLabel xml:lang="zxx">new</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nepal Bhasa; Newari</skos:definition>
+		<skos:definition xml:lang="fre">nepal bhasa; newari</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/324">
+		<skos:prefLabel xml:lang="zxx">nep</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nepali</skos:definition>
+		<skos:definition xml:lang="fre">npalais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/325">
+		<skos:prefLabel xml:lang="zxx">nia</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nias</skos:definition>
+		<skos:definition xml:lang="fre">nias</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/326">
+		<skos:prefLabel xml:lang="zxx">nic</skos:prefLabel>
+		<skos:definition xml:lang="eng">Niger-Kordofanian languages</skos:definition>
+		<skos:definition xml:lang="fre">nigro-kordofaniennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/327">
+		<skos:prefLabel xml:lang="zxx">ssa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nilo-Saharan languages</skos:definition>
+		<skos:definition xml:lang="fre">nilo-sahariennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/328">
+		<skos:prefLabel xml:lang="zxx">niu</skos:prefLabel>
+		<skos:definition xml:lang="eng">Niuean</skos:definition>
+		<skos:definition xml:lang="fre">niu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/329">
+		<skos:prefLabel xml:lang="zxx">nqo</skos:prefLabel>
+		<skos:definition xml:lang="eng">N'Ko</skos:definition>
+		<skos:definition xml:lang="fre">n'ko</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/330">
+		<skos:prefLabel xml:lang="zxx">zxx</skos:prefLabel>
+		<skos:definition xml:lang="eng">No linguistic content; Not applicable</skos:definition>
+		<skos:definition xml:lang="fre">pas de contenu linguistique; non applicable</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/331">
+		<skos:prefLabel xml:lang="zxx">nog</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nogai</skos:definition>
+		<skos:definition xml:lang="fre">noga; nogay</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/332">
+		<skos:prefLabel xml:lang="zxx">non</skos:prefLabel>
+		<skos:definition xml:lang="eng">Norse, Old</skos:definition>
+		<skos:definition xml:lang="fre">norrois, vieux</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/333">
+		<skos:prefLabel xml:lang="zxx">nai</skos:prefLabel>
+		<skos:definition xml:lang="eng">North American Indian languages</skos:definition>
+		<skos:definition xml:lang="fre">nord-amrindiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/334">
+		<skos:prefLabel xml:lang="zxx">frr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Northern Frisian</skos:definition>
+		<skos:definition xml:lang="fre">frison septentrional</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/335">
+		<skos:prefLabel xml:lang="zxx">sme</skos:prefLabel>
+		<skos:definition xml:lang="eng">Northern Sami</skos:definition>
+		<skos:definition xml:lang="fre">sami du Nord</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/336">
+		<skos:prefLabel xml:lang="zxx">nno</skos:prefLabel>
+		<skos:definition xml:lang="eng">Norwegian Nynorsk; Nynorsk, Norwegian</skos:definition>
+		<skos:definition xml:lang="fre">norvgien nynorsk; nynorsk, norvgien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/337">
+		<skos:prefLabel xml:lang="zxx">nor</skos:prefLabel>
+		<skos:definition xml:lang="eng">Norwegian</skos:definition>
+		<skos:definition xml:lang="fre">norvgien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/338">
+		<skos:prefLabel xml:lang="zxx">nub</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nubian languages</skos:definition>
+		<skos:definition xml:lang="fre">nubiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/339">
+		<skos:prefLabel xml:lang="zxx">nym</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nyamwezi</skos:definition>
+		<skos:definition xml:lang="fre">nyamwezi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/340">
+		<skos:prefLabel xml:lang="zxx">nyn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nyankole</skos:definition>
+		<skos:definition xml:lang="fre">nyankol</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/341">
+		<skos:prefLabel xml:lang="zxx">nyo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nyoro</skos:definition>
+		<skos:definition xml:lang="fre">nyoro</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/342">
+		<skos:prefLabel xml:lang="zxx">nzi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Nzima</skos:definition>
+		<skos:definition xml:lang="fre">nzema</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/343">
+		<skos:prefLabel xml:lang="zxx">oci</skos:prefLabel>
+		<skos:definition xml:lang="eng">Occitan (post 1500)</skos:definition>
+		<skos:definition xml:lang="fre">occitan (aprs 1500)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/344">
+		<skos:prefLabel xml:lang="zxx">arc</skos:prefLabel>
+		<skos:definition xml:lang="eng">Official Aramaic (700-300 BCE); Imperial Aramaic (700-300 BCE)</skos:definition>
+		<skos:definition xml:lang="fre">aramen d'empire (700-300 BCE)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/345">
+		<skos:prefLabel xml:lang="zxx">oji</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ojibwa</skos:definition>
+		<skos:definition xml:lang="fre">ojibwa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/346">
+		<skos:prefLabel xml:lang="zxx">ori</skos:prefLabel>
+		<skos:definition xml:lang="eng">Oriya</skos:definition>
+		<skos:definition xml:lang="fre">oriya</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/347">
+		<skos:prefLabel xml:lang="zxx">orm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Oromo</skos:definition>
+		<skos:definition xml:lang="fre">galla</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/348">
+		<skos:prefLabel xml:lang="zxx">osa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Osage</skos:definition>
+		<skos:definition xml:lang="fre">osage</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/349">
+		<skos:prefLabel xml:lang="zxx">oss</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ossetian; Ossetic</skos:definition>
+		<skos:definition xml:lang="fre">osste</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/350">
+		<skos:prefLabel xml:lang="zxx">oto</skos:prefLabel>
+		<skos:definition xml:lang="eng">Otomian languages</skos:definition>
+		<skos:definition xml:lang="fre">otomi, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/351">
+		<skos:prefLabel xml:lang="zxx">pal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pahlavi</skos:definition>
+		<skos:definition xml:lang="fre">pahlavi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/352">
+		<skos:prefLabel xml:lang="zxx">pau</skos:prefLabel>
+		<skos:definition xml:lang="eng">Palauan</skos:definition>
+		<skos:definition xml:lang="fre">palau</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/353">
+		<skos:prefLabel xml:lang="zxx">pli</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pali</skos:definition>
+		<skos:definition xml:lang="fre">pali</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/354">
+		<skos:prefLabel xml:lang="zxx">pam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pampanga; Kapampangan</skos:definition>
+		<skos:definition xml:lang="fre">pampangan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/355">
+		<skos:prefLabel xml:lang="zxx">pag</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pangasinan</skos:definition>
+		<skos:definition xml:lang="fre">pangasinan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/356">
+		<skos:prefLabel xml:lang="zxx">pan</skos:prefLabel>
+		<skos:definition xml:lang="eng">Panjabi; Punjabi</skos:definition>
+		<skos:definition xml:lang="fre">pendjabi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/357">
+		<skos:prefLabel xml:lang="zxx">pap</skos:prefLabel>
+		<skos:definition xml:lang="eng">Papiamento</skos:definition>
+		<skos:definition xml:lang="fre">papiamento</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/358">
+		<skos:prefLabel xml:lang="zxx">paa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Papuan languages</skos:definition>
+		<skos:definition xml:lang="fre">papoues, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/359">
+		<skos:prefLabel xml:lang="zxx">nso</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pedi; Sepedi; Northern Sotho</skos:definition>
+		<skos:definition xml:lang="fre">pedi; sepedi; sotho du Nord</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/360">
+		<skos:prefLabel xml:lang="zxx">peo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Persian, Old (ca.600-400 B.C.)</skos:definition>
+		<skos:definition xml:lang="fre">perse, vieux (ca. 600-400 av. J.-C.)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/361">
+		<skos:prefLabel xml:lang="zxx">fas</skos:prefLabel>
+		<skos:definition xml:lang="eng">Persian</skos:definition>
+		<skos:definition xml:lang="fre">persan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/362">
+		<skos:prefLabel xml:lang="zxx">per</skos:prefLabel>
+		<skos:definition xml:lang="eng">Persian</skos:definition>
+		<skos:definition xml:lang="fre">persan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/363">
+		<skos:prefLabel xml:lang="zxx">per</skos:prefLabel>
+		<skos:definition xml:lang="eng">Persian</skos:definition>
+		<skos:definition xml:lang="fre">persan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/364">
+		<skos:prefLabel xml:lang="zxx">phi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Philippine languages</skos:definition>
+		<skos:definition xml:lang="fre">philippines, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/365">
+		<skos:prefLabel xml:lang="zxx">phn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Phoenician</skos:definition>
+		<skos:definition xml:lang="fre">phnicien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/366">
+		<skos:prefLabel xml:lang="zxx">pon</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pohnpeian</skos:definition>
+		<skos:definition xml:lang="fre">pohnpei</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/367">
+		<skos:prefLabel xml:lang="zxx">pol</skos:prefLabel>
+		<skos:definition xml:lang="eng">Polish</skos:definition>
+		<skos:definition xml:lang="fre">polonais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/368">
+		<skos:prefLabel xml:lang="zxx">por</skos:prefLabel>
+		<skos:definition xml:lang="eng">Portuguese</skos:definition>
+		<skos:definition xml:lang="fre">portugais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/369">
+		<skos:prefLabel xml:lang="zxx">pra</skos:prefLabel>
+		<skos:definition xml:lang="eng">Prakrit languages</skos:definition>
+		<skos:definition xml:lang="fre">prkrit, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/370">
+		<skos:prefLabel xml:lang="zxx">pro</skos:prefLabel>
+		<skos:definition xml:lang="eng">Provenal, Old (to 1500);Occitan, Old (to 1500)</skos:definition>
+		<skos:definition xml:lang="fre">provenal ancien (jusqu' 1500); occitan ancien (jusqu' 1500)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/371">
+		<skos:prefLabel xml:lang="zxx">pus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Pushto; Pashto</skos:definition>
+		<skos:definition xml:lang="fre">pachto</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/372">
+		<skos:prefLabel xml:lang="zxx">que</skos:prefLabel>
+		<skos:definition xml:lang="eng">Quechua</skos:definition>
+		<skos:definition xml:lang="fre">quechua</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/373">
+		<skos:prefLabel xml:lang="zxx">raj</skos:prefLabel>
+		<skos:definition xml:lang="eng">Rajasthani</skos:definition>
+		<skos:definition xml:lang="fre">rajasthani</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/374">
+		<skos:prefLabel xml:lang="zxx">rap</skos:prefLabel>
+		<skos:definition xml:lang="eng">Rapanui</skos:definition>
+		<skos:definition xml:lang="fre">rapanui</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/375">
+		<skos:prefLabel xml:lang="zxx">rar</skos:prefLabel>
+		<skos:definition xml:lang="eng">Rarotongan; Cook Islands Maori</skos:definition>
+		<skos:definition xml:lang="fre">rarotonga; maori des les Cook</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/376">
+		<skos:prefLabel xml:lang="zxx">qaa-qtz</skos:prefLabel>
+		<skos:definition xml:lang="eng">Reserved for local use</skos:definition>
+		<skos:definition xml:lang="fre">rserve  l'usage local</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/377">
+		<skos:prefLabel xml:lang="zxx">roa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Romance languages</skos:definition>
+		<skos:definition xml:lang="fre">romanes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/378">
+		<skos:prefLabel xml:lang="zxx">ron</skos:prefLabel>
+		<skos:definition xml:lang="eng">Romanian; Moldavian; Moldovan</skos:definition>
+		<skos:definition xml:lang="fre">roumain; moldave</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/379">
+		<skos:prefLabel xml:lang="zxx">rum</skos:prefLabel>
+		<skos:definition xml:lang="eng">Romanian; Moldavian; Moldovan</skos:definition>
+		<skos:definition xml:lang="fre">roumain; moldave</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/380">
+		<skos:prefLabel xml:lang="zxx">roh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Romansh</skos:definition>
+		<skos:definition xml:lang="fre">romanche</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/381">
+		<skos:prefLabel xml:lang="zxx">rom</skos:prefLabel>
+		<skos:definition xml:lang="eng">Romany</skos:definition>
+		<skos:definition xml:lang="fre">tsigane</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/382">
+		<skos:prefLabel xml:lang="zxx">run</skos:prefLabel>
+		<skos:definition xml:lang="eng">Rundi</skos:definition>
+		<skos:definition xml:lang="fre">rundi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/383">
+		<skos:prefLabel xml:lang="zxx">rus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Russian</skos:definition>
+		<skos:definition xml:lang="fre">russe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/384">
+		<skos:prefLabel xml:lang="zxx">sal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Salishan languages</skos:definition>
+		<skos:definition xml:lang="fre">salishennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/385">
+		<skos:prefLabel xml:lang="zxx">sam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Samaritan Aramaic</skos:definition>
+		<skos:definition xml:lang="fre">samaritain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/386">
+		<skos:prefLabel xml:lang="zxx">smi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sami languages</skos:definition>
+		<skos:definition xml:lang="fre">sames, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/387">
+		<skos:prefLabel xml:lang="zxx">smo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Samoan</skos:definition>
+		<skos:definition xml:lang="fre">samoan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/388">
+		<skos:prefLabel xml:lang="zxx">sad</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sandawe</skos:definition>
+		<skos:definition xml:lang="fre">sandawe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/389">
+		<skos:prefLabel xml:lang="zxx">sag</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sango</skos:definition>
+		<skos:definition xml:lang="fre">sango</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/390">
+		<skos:prefLabel xml:lang="zxx">san</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sanskrit</skos:definition>
+		<skos:definition xml:lang="fre">sanskrit</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/391">
+		<skos:prefLabel xml:lang="zxx">sat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Santali</skos:definition>
+		<skos:definition xml:lang="fre">santal</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/392">
+		<skos:prefLabel xml:lang="zxx">srd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sardinian</skos:definition>
+		<skos:definition xml:lang="fre">sarde</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/393">
+		<skos:prefLabel xml:lang="zxx">sas</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sasak</skos:definition>
+		<skos:definition xml:lang="fre">sasak</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/394">
+		<skos:prefLabel xml:lang="zxx">sco</skos:prefLabel>
+		<skos:definition xml:lang="eng">Scots</skos:definition>
+		<skos:definition xml:lang="fre">cossais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/395">
+		<skos:prefLabel xml:lang="zxx">sel</skos:prefLabel>
+		<skos:definition xml:lang="eng">Selkup</skos:definition>
+		<skos:definition xml:lang="fre">selkoupe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/396">
+		<skos:prefLabel xml:lang="zxx">sem</skos:prefLabel>
+		<skos:definition xml:lang="eng">Semitic languages</skos:definition>
+		<skos:definition xml:lang="fre">smitiques, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/397">
+		<skos:prefLabel xml:lang="zxx">srp</skos:prefLabel>
+		<skos:definition xml:lang="eng">Serbian</skos:definition>
+		<skos:definition xml:lang="fre">serbe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/398">
+		<skos:prefLabel xml:lang="zxx">srr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Serer</skos:definition>
+		<skos:definition xml:lang="fre">srre</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/399">
+		<skos:prefLabel xml:lang="zxx">shn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Shan</skos:definition>
+		<skos:definition xml:lang="fre">chan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/400">
+		<skos:prefLabel xml:lang="zxx">sna</skos:prefLabel>
+		<skos:definition xml:lang="eng">Shona</skos:definition>
+		<skos:definition xml:lang="fre">shona</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/401">
+		<skos:prefLabel xml:lang="zxx">iii</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sichuan Yi; Nuosu</skos:definition>
+		<skos:definition xml:lang="fre">yi de Sichuan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/402">
+		<skos:prefLabel xml:lang="zxx">scn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sicilian</skos:definition>
+		<skos:definition xml:lang="fre">sicilien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/403">
+		<skos:prefLabel xml:lang="zxx">sid</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sidamo</skos:definition>
+		<skos:definition xml:lang="fre">sidamo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/404">
+		<skos:prefLabel xml:lang="zxx">sgn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sign Languages</skos:definition>
+		<skos:definition xml:lang="fre">langues des signes</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/405">
+		<skos:prefLabel xml:lang="zxx">bla</skos:prefLabel>
+		<skos:definition xml:lang="eng">Siksika</skos:definition>
+		<skos:definition xml:lang="fre">blackfoot</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/406">
+		<skos:prefLabel xml:lang="zxx">snd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sindhi</skos:definition>
+		<skos:definition xml:lang="fre">sindhi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/407">
+		<skos:prefLabel xml:lang="zxx">sin</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sinhala; Sinhalese</skos:definition>
+		<skos:definition xml:lang="fre">singhalais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/408">
+		<skos:prefLabel xml:lang="zxx">sit</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sino-Tibetan languages</skos:definition>
+		<skos:definition xml:lang="fre">sino-tibtaines, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/409">
+		<skos:prefLabel xml:lang="zxx">sio</skos:prefLabel>
+		<skos:definition xml:lang="eng">Siouan languages</skos:definition>
+		<skos:definition xml:lang="fre">sioux, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/410">
+		<skos:prefLabel xml:lang="zxx">sms</skos:prefLabel>
+		<skos:definition xml:lang="eng">Skolt Sami</skos:definition>
+		<skos:definition xml:lang="fre">sami skolt</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/411">
+		<skos:prefLabel xml:lang="zxx">den</skos:prefLabel>
+		<skos:definition xml:lang="eng">Slave (Athapascan)</skos:definition>
+		<skos:definition xml:lang="fre">esclave (athapascan)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/412">
+		<skos:prefLabel xml:lang="zxx">sla</skos:prefLabel>
+		<skos:definition xml:lang="eng">Slavic languages</skos:definition>
+		<skos:definition xml:lang="fre">slaves, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/413">
+		<skos:prefLabel xml:lang="zxx">slk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Slovak</skos:definition>
+		<skos:definition xml:lang="fre">slovaque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/414">
+		<skos:prefLabel xml:lang="zxx">slo</skos:prefLabel>
+		<skos:definition xml:lang="eng">Slovak</skos:definition>
+		<skos:definition xml:lang="fre">slovaque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/415">
+		<skos:prefLabel xml:lang="zxx">slv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Slovenian</skos:definition>
+		<skos:definition xml:lang="fre">slovne</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/416">
+		<skos:prefLabel xml:lang="zxx">sog</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sogdian</skos:definition>
+		<skos:definition xml:lang="fre">sogdien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/417">
+		<skos:prefLabel xml:lang="zxx">som</skos:prefLabel>
+		<skos:definition xml:lang="eng">Somali</skos:definition>
+		<skos:definition xml:lang="fre">somali</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/418">
+		<skos:prefLabel xml:lang="zxx">son</skos:prefLabel>
+		<skos:definition xml:lang="eng">Songhai languages</skos:definition>
+		<skos:definition xml:lang="fre">songhai, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/419">
+		<skos:prefLabel xml:lang="zxx">snk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Soninke</skos:definition>
+		<skos:definition xml:lang="fre">sonink</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/420">
+		<skos:prefLabel xml:lang="zxx">wen</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sorbian languages</skos:definition>
+		<skos:definition xml:lang="fre">sorabes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/421">
+		<skos:prefLabel xml:lang="zxx">sot</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sotho, Southern</skos:definition>
+		<skos:definition xml:lang="fre">sotho du Sud</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/422">
+		<skos:prefLabel xml:lang="zxx">sai</skos:prefLabel>
+		<skos:definition xml:lang="eng">South American Indian languages</skos:definition>
+		<skos:definition xml:lang="fre">sud-amrindiennes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/423">
+		<skos:prefLabel xml:lang="zxx">alt</skos:prefLabel>
+		<skos:definition xml:lang="eng">Southern Altai</skos:definition>
+		<skos:definition xml:lang="fre">altai du Sud</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/424">
+		<skos:prefLabel xml:lang="zxx">sma</skos:prefLabel>
+		<skos:definition xml:lang="eng">Southern Sami</skos:definition>
+		<skos:definition xml:lang="fre">sami du Sud</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/425">
+		<skos:prefLabel xml:lang="zxx">spa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Spanish; Castilian</skos:definition>
+		<skos:definition xml:lang="fre">espagnol; castillan</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/426">
+		<skos:prefLabel xml:lang="zxx">srn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sranan Tongo</skos:definition>
+		<skos:definition xml:lang="fre">sranan tongo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/427">
+		<skos:prefLabel xml:lang="zxx">suk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sukuma</skos:definition>
+		<skos:definition xml:lang="fre">sukuma</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/428">
+		<skos:prefLabel xml:lang="zxx">sux</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sumerian</skos:definition>
+		<skos:definition xml:lang="fre">sumrien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/429">
+		<skos:prefLabel xml:lang="zxx">sun</skos:prefLabel>
+		<skos:definition xml:lang="eng">Sundanese</skos:definition>
+		<skos:definition xml:lang="fre">soundanais</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/430">
+		<skos:prefLabel xml:lang="zxx">sus</skos:prefLabel>
+		<skos:definition xml:lang="eng">Susu</skos:definition>
+		<skos:definition xml:lang="fre">soussou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/431">
+		<skos:prefLabel xml:lang="zxx">swa</skos:prefLabel>
+		<skos:definition xml:lang="eng">Swahili</skos:definition>
+		<skos:definition xml:lang="fre">swahili</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/432">
+		<skos:prefLabel xml:lang="zxx">ssw</skos:prefLabel>
+		<skos:definition xml:lang="eng">Swati</skos:definition>
+		<skos:definition xml:lang="fre">swati</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/433">
+		<skos:prefLabel xml:lang="zxx">swe</skos:prefLabel>
+		<skos:definition xml:lang="eng">Swedish</skos:definition>
+		<skos:definition xml:lang="fre">sudois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/434">
+		<skos:prefLabel xml:lang="zxx">gsw</skos:prefLabel>
+		<skos:definition xml:lang="eng">Swiss German; Alemannic; Alsatian</skos:definition>
+		<skos:definition xml:lang="fre">suisse almanique; almanique; alsacien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/435">
+		<skos:prefLabel xml:lang="zxx">syr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Syriac</skos:definition>
+		<skos:definition xml:lang="fre">syriaque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/436">
+		<skos:prefLabel xml:lang="zxx">tgl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tagalog</skos:definition>
+		<skos:definition xml:lang="fre">tagalog</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/437">
+		<skos:prefLabel xml:lang="zxx">tah</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tahitian</skos:definition>
+		<skos:definition xml:lang="fre">tahitien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/438">
+		<skos:prefLabel xml:lang="zxx">tai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tai languages</skos:definition>
+		<skos:definition xml:lang="fre">tai, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/439">
+		<skos:prefLabel xml:lang="zxx">tgk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tajik</skos:definition>
+		<skos:definition xml:lang="fre">tadjik</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/440">
+		<skos:prefLabel xml:lang="zxx">tmh</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tamashek</skos:definition>
+		<skos:definition xml:lang="fre">tamacheq</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/441">
+		<skos:prefLabel xml:lang="zxx">tam</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tamil</skos:definition>
+		<skos:definition xml:lang="fre">tamoul</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/442">
+		<skos:prefLabel xml:lang="zxx">tat</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tatar</skos:definition>
+		<skos:definition xml:lang="fre">tatar</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/443">
+		<skos:prefLabel xml:lang="zxx">tel</skos:prefLabel>
+		<skos:definition xml:lang="eng">Telugu</skos:definition>
+		<skos:definition xml:lang="fre">tlougou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/444">
+		<skos:prefLabel xml:lang="zxx">ter</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tereno</skos:definition>
+		<skos:definition xml:lang="fre">tereno</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/445">
+		<skos:prefLabel xml:lang="zxx">tet</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tetum</skos:definition>
+		<skos:definition xml:lang="fre">tetum</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/446">
+		<skos:prefLabel xml:lang="zxx">tha</skos:prefLabel>
+		<skos:definition xml:lang="eng">Thai</skos:definition>
+		<skos:definition xml:lang="fre">tha</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/447">
+		<skos:prefLabel xml:lang="zxx">bod</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tibetan</skos:definition>
+		<skos:definition xml:lang="fre">tibtain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/448">
+		<skos:prefLabel xml:lang="zxx">tib</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tibetan</skos:definition>
+		<skos:definition xml:lang="fre">tibtain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/449">
+		<skos:prefLabel xml:lang="zxx">tib</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tibetan</skos:definition>
+		<skos:definition xml:lang="fre">tibtain</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/450">
+		<skos:prefLabel xml:lang="zxx">tig</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tigre</skos:definition>
+		<skos:definition xml:lang="fre">tigr</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/451">
+		<skos:prefLabel xml:lang="zxx">tir</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tigrinya</skos:definition>
+		<skos:definition xml:lang="fre">tigrigna</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/452">
+		<skos:prefLabel xml:lang="zxx">tem</skos:prefLabel>
+		<skos:definition xml:lang="eng">Timne</skos:definition>
+		<skos:definition xml:lang="fre">temne</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/453">
+		<skos:prefLabel xml:lang="zxx">tiv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tiv</skos:definition>
+		<skos:definition xml:lang="fre">tiv</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/454">
+		<skos:prefLabel xml:lang="zxx">tli</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tlingit</skos:definition>
+		<skos:definition xml:lang="fre">tlingit</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/455">
+		<skos:prefLabel xml:lang="zxx">tpi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tok Pisin</skos:definition>
+		<skos:definition xml:lang="fre">tok pisin</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/456">
+		<skos:prefLabel xml:lang="zxx">tkl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tokelau</skos:definition>
+		<skos:definition xml:lang="fre">tokelau</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/457">
+		<skos:prefLabel xml:lang="zxx">tog</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tonga (Nyasa)</skos:definition>
+		<skos:definition xml:lang="fre">tonga (Nyasa)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/458">
+		<skos:prefLabel xml:lang="zxx">ton</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tonga (Tonga Islands)</skos:definition>
+		<skos:definition xml:lang="fre">tongan (les Tonga)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/459">
+		<skos:prefLabel xml:lang="zxx">tsi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tsimshian</skos:definition>
+		<skos:definition xml:lang="fre">tsimshian</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/460">
+		<skos:prefLabel xml:lang="zxx">tso</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tsonga</skos:definition>
+		<skos:definition xml:lang="fre">tsonga</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/461">
+		<skos:prefLabel xml:lang="zxx">tsn</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tswana</skos:definition>
+		<skos:definition xml:lang="fre">tswana</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/462">
+		<skos:prefLabel xml:lang="zxx">tum</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tumbuka</skos:definition>
+		<skos:definition xml:lang="fre">tumbuka</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/463">
+		<skos:prefLabel xml:lang="zxx">tup</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tupi languages</skos:definition>
+		<skos:definition xml:lang="fre">tupi, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/464">
+		<skos:prefLabel xml:lang="zxx">ota</skos:prefLabel>
+		<skos:definition xml:lang="eng">Turkish, Ottoman (1500-1928)</skos:definition>
+		<skos:definition xml:lang="fre">turc ottoman (1500-1928)</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/465">
+		<skos:prefLabel xml:lang="zxx">tur</skos:prefLabel>
+		<skos:definition xml:lang="eng">Turkish</skos:definition>
+		<skos:definition xml:lang="fre">turc</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/466">
+		<skos:prefLabel xml:lang="zxx">tuk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Turkmen</skos:definition>
+		<skos:definition xml:lang="fre">turkmne</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/467">
+		<skos:prefLabel xml:lang="zxx">tvl</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tuvalu</skos:definition>
+		<skos:definition xml:lang="fre">tuvalu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/468">
+		<skos:prefLabel xml:lang="zxx">tyv</skos:prefLabel>
+		<skos:definition xml:lang="eng">Tuvinian</skos:definition>
+		<skos:definition xml:lang="fre">touva</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/469">
+		<skos:prefLabel xml:lang="zxx">twi</skos:prefLabel>
+		<skos:definition xml:lang="eng">Twi</skos:definition>
+		<skos:definition xml:lang="fre">twi</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/470">
+		<skos:prefLabel xml:lang="zxx">udm</skos:prefLabel>
+		<skos:definition xml:lang="eng">Udmurt</skos:definition>
+		<skos:definition xml:lang="fre">oudmourte</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/471">
+		<skos:prefLabel xml:lang="zxx">uga</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ugaritic</skos:definition>
+		<skos:definition xml:lang="fre">ougaritique</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/472">
+		<skos:prefLabel xml:lang="zxx">uig</skos:prefLabel>
+		<skos:definition xml:lang="eng">Uighur; Uyghur</skos:definition>
+		<skos:definition xml:lang="fre">ougour</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/473">
+		<skos:prefLabel xml:lang="zxx">ukr</skos:prefLabel>
+		<skos:definition xml:lang="eng">Ukrainian</skos:definition>
+		<skos:definition xml:lang="fre">ukrainien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/474">
+		<skos:prefLabel xml:lang="zxx">umb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Umbundu</skos:definition>
+		<skos:definition xml:lang="fre">umbundu</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/475">
+		<skos:prefLabel xml:lang="zxx">mis</skos:prefLabel>
+		<skos:definition xml:lang="eng">Uncoded languages</skos:definition>
+		<skos:definition xml:lang="fre">langues non codes</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/476">
+		<skos:prefLabel xml:lang="zxx">und</skos:prefLabel>
+		<skos:definition xml:lang="eng">Undetermined</skos:definition>
+		<skos:definition xml:lang="fre">indtermine</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/477">
+		<skos:prefLabel xml:lang="zxx">hsb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Upper Sorbian</skos:definition>
+		<skos:definition xml:lang="fre">haut-sorabe</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/478">
+		<skos:prefLabel xml:lang="zxx">urd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Urdu</skos:definition>
+		<skos:definition xml:lang="fre">ourdou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/479">
+		<skos:prefLabel xml:lang="zxx">uzb</skos:prefLabel>
+		<skos:definition xml:lang="eng">Uzbek</skos:definition>
+		<skos:definition xml:lang="fre">ouszbek</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/480">
+		<skos:prefLabel xml:lang="zxx">vai</skos:prefLabel>
+		<skos:definition xml:lang="eng">Vai</skos:definition>
+		<skos:definition xml:lang="fre">va</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/481">
+		<skos:prefLabel xml:lang="zxx">ven</skos:prefLabel>
+		<skos:definition xml:lang="eng">Venda</skos:definition>
+		<skos:definition xml:lang="fre">venda</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/482">
+		<skos:prefLabel xml:lang="zxx">vie</skos:prefLabel>
+		<skos:definition xml:lang="eng">Vietnamese</skos:definition>
+		<skos:definition xml:lang="fre">vietnamien</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/483">
+		<skos:prefLabel xml:lang="zxx">vol</skos:prefLabel>
+		<skos:definition xml:lang="eng">Volapk</skos:definition>
+		<skos:definition xml:lang="fre">volapk</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/484">
+		<skos:prefLabel xml:lang="zxx">vot</skos:prefLabel>
+		<skos:definition xml:lang="eng">Votic</skos:definition>
+		<skos:definition xml:lang="fre">vote</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/485">
+		<skos:prefLabel xml:lang="zxx">wak</skos:prefLabel>
+		<skos:definition xml:lang="eng">Wakashan languages</skos:definition>
+		<skos:definition xml:lang="fre">wakashanes, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/486">
+		<skos:prefLabel xml:lang="zxx">wln</skos:prefLabel>
+		<skos:definition xml:lang="eng">Walloon</skos:definition>
+		<skos:definition xml:lang="fre">wallon</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/487">
+		<skos:prefLabel xml:lang="zxx">war</skos:prefLabel>
+		<skos:definition xml:lang="eng">Waray</skos:definition>
+		<skos:definition xml:lang="fre">waray</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/488">
+		<skos:prefLabel xml:lang="zxx">was</skos:prefLabel>
+		<skos:definition xml:lang="eng">Washo</skos:definition>
+		<skos:definition xml:lang="fre">washo</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/489">
+		<skos:prefLabel xml:lang="zxx">cym</skos:prefLabel>
+		<skos:definition xml:lang="eng">Welsh</skos:definition>
+		<skos:definition xml:lang="fre">gallois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/490">
+		<skos:prefLabel xml:lang="zxx">wel</skos:prefLabel>
+		<skos:definition xml:lang="eng">Welsh</skos:definition>
+		<skos:definition xml:lang="fre">gallois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/491">
+		<skos:prefLabel xml:lang="zxx">fry</skos:prefLabel>
+		<skos:definition xml:lang="eng">Western Frisian</skos:definition>
+		<skos:definition xml:lang="fre">frison occidental</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/492">
+		<skos:prefLabel xml:lang="zxx">wal</skos:prefLabel>
+		<skos:definition xml:lang="eng">Wolaitta; Wolaytta</skos:definition>
+		<skos:definition xml:lang="fre">wolaitta; wolaytta</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/493">
+		<skos:prefLabel xml:lang="zxx">wol</skos:prefLabel>
+		<skos:definition xml:lang="eng">Wolof</skos:definition>
+		<skos:definition xml:lang="fre">wolof</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/494">
+		<skos:prefLabel xml:lang="zxx">xho</skos:prefLabel>
+		<skos:definition xml:lang="eng">Xhosa</skos:definition>
+		<skos:definition xml:lang="fre">xhosa</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/495">
+		<skos:prefLabel xml:lang="zxx">sah</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yakut</skos:definition>
+		<skos:definition xml:lang="fre">iakoute</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/496">
+		<skos:prefLabel xml:lang="zxx">yao</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yao</skos:definition>
+		<skos:definition xml:lang="fre">yao</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/497">
+		<skos:prefLabel xml:lang="zxx">yap</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yapese</skos:definition>
+		<skos:definition xml:lang="fre">yapois</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/498">
+		<skos:prefLabel xml:lang="zxx">yid</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yiddish</skos:definition>
+		<skos:definition xml:lang="fre">yiddish</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/499">
+		<skos:prefLabel xml:lang="zxx">yor</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yoruba</skos:definition>
+		<skos:definition xml:lang="fre">yoruba</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/500">
+		<skos:prefLabel xml:lang="zxx">ypk</skos:prefLabel>
+		<skos:definition xml:lang="eng">Yupik languages</skos:definition>
+		<skos:definition xml:lang="fre">yupik, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/501">
+		<skos:prefLabel xml:lang="zxx">znd</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zande languages</skos:definition>
+		<skos:definition xml:lang="fre">zand, langues</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/502">
+		<skos:prefLabel xml:lang="zxx">zap</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zapotec</skos:definition>
+		<skos:definition xml:lang="fre">zapotque</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/503">
+		<skos:prefLabel xml:lang="zxx">zza</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zaza; Dimili; Dimli; Kirdki; Kirmanjki; Zazaki</skos:definition>
+		<skos:definition xml:lang="fre">zaza; dimili; dimli; kirdki; kirmanjki; zazaki</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/504">
+		<skos:prefLabel xml:lang="zxx">zen</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zenaga</skos:definition>
+		<skos:definition xml:lang="fre">zenaga</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/505">
+		<skos:prefLabel xml:lang="zxx">zha</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zhuang; Chuang</skos:definition>
+		<skos:definition xml:lang="fre">zhuang; chuang</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/506">
+		<skos:prefLabel xml:lang="zxx">zul</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zulu</skos:definition>
+		<skos:definition xml:lang="fre">zoulou</skos:definition>
+	</rdf:Description>
+	<rdf:Description rdf:about="http://www.loc.gov/standards/iso639-2/php/code_list.php/507">
+		<skos:prefLabel xml:lang="zxx">zun</skos:prefLabel>
+		<skos:definition xml:lang="eng">Zuni</skos:definition>
+		<skos:definition xml:lang="fre">zuni</skos:definition>
+	</rdf:Description>
+</rdf:RDF>
