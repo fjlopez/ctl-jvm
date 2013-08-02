@@ -132,7 +132,7 @@
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${basedir}/target/generated-sources/java</outputDirectory>
-									<excludes> cucumber/runtime/Runtime.java </excludes>
+									<excludes> cucumber/runtime/Runtime.java, cucumber/runtime/StepDefinitionMatch.java </excludes>
 								</artifactItem>
 							</artifactItems>
 						</configuration>
