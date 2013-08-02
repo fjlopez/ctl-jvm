@@ -19,6 +19,7 @@
 	<modules>
 		<module>core</module>
 		<module>cucumber</module>
+		<module>inspire</module>
 	</modules>
 	<build>
 		<plugins>
