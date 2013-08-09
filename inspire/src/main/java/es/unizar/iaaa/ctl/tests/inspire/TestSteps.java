@@ -36,6 +36,8 @@ import es.unizar.iaaa.ctl.model.XMLValidatingParser;
 import es.unizar.iaaa.ctl.xml.XMLParserErrorHandler;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 
 import static es.unizar.iaaa.ctl.CTL.*;
 
@@ -50,13 +52,12 @@ import cucumber.runtime.PassVerdictException;
 
 public class TestSteps {
 
-	ResourceBundle rb=null;
+	Messages messages=null;
 	
 	@Dado("^el documento de capabilities del servicio$")
 	@Given("^the service's capabilities document$")
 	public void servicesDocument(){
-		String lang=get("serviceValidationLanguage",String.class);
-		rb=ResourceBundle.getBundle(this.getClass().getCanonicalName(), new Locale(lang));
+		messages = new Messages(this, get("serviceValidationLanguage",String.class));
 	}
 	
 	
@@ -70,20 +71,21 @@ public class TestSteps {
 	@Dada("^la descripción del servicio tiene declarados opcionalmente una lista de idiomas soportados$")
 	@Given("^the service description has optionally a declaration of supported languages$")
 	public void extractAdditionalSupportedLanguages() throws Throwable {
-		List<String> supportedLanguages = new ArrayList<String>();
-		for (Node n : select(context(),
-				"//*[local-name()='SupportedLanguage']/*[local-name()='Language']/text()")) {
-			supportedLanguages.add(n.getNodeValue());
-		}
-		set("supportedLanguages", supportedLanguages);
+		set("supportedLanguages", nodes2strings(select("//*[local-name()='SupportedLanguage']/*[local-name()='Language']/text()")));
 	}
 
 	@Dada("^la descripción del servicio tiene declarado un idioma por defecto$")
 	@Given("^the service description has a declaration of default language$")
 	public void extractDefaultLanguage() throws Throwable {
-		String defaultLanguage = select(context(),
-				"//*[local-name()='DefaultLanguage']/*[local-name()='Language']",
-				String.class);
+		// Proposal A:
+		// - select returns a Selection
+		// - functions: 
+		//		selection2string
+		//		selection2double
+		//		selection2boolean
+		//		selection2node
+		//		selection2nodes
+		String defaultLanguage = select("//*[local-name()='DefaultLanguage']/*[local-name()='Language']", String.class);
 		assertTrue("Service description must have a default language", defaultLanguage != null);
 		assertTrue("Service description must have a default language", defaultLanguage.length() >= 0);
 		set("defaultLanguage", defaultLanguage);
@@ -92,9 +94,7 @@ public class TestSteps {
 	@Dado("^el idioma (\\w+) no soportado por el servicio$")
 	@Given("^the language (\\w+) is unsupported by the service$")
 	public void checkUnsupportedLanguage(String lang) throws Throwable {
-		String mens=rb.getString("checkUnsupportedLanguage");
-		String err=MessageFormat.format(mens, new Object[]{lang});
-		assertTrue(err, !lang.equals(get("defaultLanguage",String.class)) && !get("supportedLanguages", List.class).contains(lang));
+		assertTrue(messages.getString("checkUnsupportedLanguage", lang), !lang.equals(get("defaultLanguage",String.class)) && !get("supportedLanguages", List.class).contains(lang));
 	}
 	
 
@@ -122,34 +122,25 @@ public class TestSteps {
 	@When("^I request a GetCapabilities document with no specific language to the service$")
 	public void requestGetCapabilitiesDocumentWithNoSpecificLanguage()
 			throws Throwable {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		requestGetCapabilitiesDocumentWithNoSpecificLanguage(serviceType);
+		requestGetCapabilitiesDocumentWithNoSpecificLanguage(guessServiceType());
 	}
 	
 	public void requestGetCapabilitiesDocumentWithNoSpecificLanguage(String serviceType)
 				throws Throwable {
 		List<String> retrievedLanguages = new ArrayList<String>();
 		String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
-		Node requestedCapabilities = request(capabilitiesURL+"request=GetCapabilities&service="+serviceType,
+		String url = capabilitiesURL+"request=GetCapabilities&service="+serviceType;
+		Node requestedCapabilities = request(url,
 				parser(XMLValidatingParser.class).validate(false));
-		String mens2=rb.getString("requestGetCapabilitiesDocumentWithNoSpecificLanguage1");
-		String err2=MessageFormat.format(mens2, new Object[]{capabilitiesURL+"request=GetCapabilities&service="+serviceType});
-		assertTrue(err2, requestedCapabilities!=null);
+		assertTrue(messages.getString("requestGetCapabilitiesDocumentWithNoSpecificLanguage1", url), requestedCapabilities!=null);
 		String rlang = select(requestedCapabilities,
 				"//inspire_common:ResponseLanguage/inspire_common:Language",
 				String.class);
-		String mens3=rb.getString("requestGetCapabilitiesDocumentWithNoSpecificLanguage2");
-		String err3=MessageFormat.format(mens3, new Object[]{capabilitiesURL+"request=GetCapabilities&service="+serviceType});
-		assertTrue(err3,rlang != null);
+		assertTrue(messages.getString("requestGetCapabilitiesDocumentWithNoSpecificLanguage2", url),rlang != null);
 		retrievedLanguages.add(rlang);
 		set("retrievedLanguages", retrievedLanguages);
 	}
@@ -161,43 +152,31 @@ public class TestSteps {
 			throws Throwable {
 		List<Object> request=get("requestedLanguages", List.class);
 		List<Object> response=get("retrievedLanguages", List.class);
-		String mens=rb.getString("eachResponseShallCorrespondToThatRequestedLanguage");
-		String err=MessageFormat.format(mens, new Object[]{request,response});
-		assertTrue(err,request.equals(response));
+		assertEquals(messages.getString("eachResponseShallCorrespondToThatRequestedLanguage", request,response),request, response);
 	}
 
 	@Cuando("^se pide el documento GetCapabilities en el idioma (\\w+) al servicio$")
 	@When("^I request a GetCapabilities document with the language (\\w+) to the service$")
 	public void requestGetCapabilitiesDocumentWithAnUnsupportedLanguage(String language) throws Throwable{
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		requestGetCapabilitiesDocumentWithAnUnsupportedLanguage(language,serviceType);
+		requestGetCapabilitiesDocumentWithAnUnsupportedLanguage(language,guessServiceType());
 	}
 			
 	public void requestGetCapabilitiesDocumentWithAnUnsupportedLanguage(
 			String language, String serviceType) throws Throwable {
 		List<String> retrievedLanguages = new ArrayList<String>();
 		String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
 		capabilitiesURL = capabilitiesURL+"SERVICE="+serviceType+ "&REQUEST=GetCapabilities" + "&LANGUAGE=" + language;
 		Node requestedCapabilities = request(capabilitiesURL,
 				parser(XMLValidatingParser.class).validate(false));
-		String mens2=rb.getString("requestGetCapabilitiesDocumentWithAnUnsupportedLanguage1");
-		String err2=MessageFormat.format(mens2, new Object[]{capabilitiesURL});
-		assertTrue(err2, requestedCapabilities!=null);
+		assertTrue(messages.getString("requestGetCapabilitiesDocumentWithAnUnsupportedLanguage1", capabilitiesURL), requestedCapabilities!=null);
 		String rlang = select(requestedCapabilities,
 				"//inspire_common:ResponseLanguage/inspire_common:Language",
 				String.class);
-		String mens3=rb.getString("requestGetCapabilitiesDocumentWithAnUnsupportedLanguage2");
-		String err3=MessageFormat.format(mens3, new Object[]{capabilitiesURL});
-		assertTrue(err3, rlang != null);
+		assertTrue(messages.getString("requestGetCapabilitiesDocumentWithAnUnsupportedLanguage2", capabilitiesURL), rlang != null);
 		retrievedLanguages.add(rlang);
 		set("retrievedLanguages", retrievedLanguages);
 	}
@@ -210,15 +189,13 @@ public class TestSteps {
 		requestedLanguages.add(get("defaultLanguage",String.class));
 		set("requestedLanguages", requestedLanguages);
 		List<?> retrievedLanguages=get("retrievedLanguages", List.class);
-		String mens=rb.getString("responseShallCorrespondToServiceDefaultLanguage");
-		String err=MessageFormat.format(mens, new Object[]{requestedLanguages,retrievedLanguages});
-		assertTrue(err,requestedLanguages.equals(get("retrievedLanguages", List.class)));
+		assertTrue(messages.getString("responseShallCorrespondToServiceDefaultLanguage", requestedLanguages,retrievedLanguages),requestedLanguages.equals(get("retrievedLanguages", List.class)));
 	}
 
 	@Entonces("^se mira la lista de valores en (.*)$")
 	@When("^I look the list of values in (.*)$")
 	public void getXPathExpression(String xpath) throws Throwable {
-		set("nodes",select(context(), xpath));
+		set("nodes",select(xpath));
 	}
 
 	@Entonces("^([^\\s]+) está presente cuando el nodo raíz es ([^\\s]+)$")
@@ -243,48 +220,35 @@ public class TestSteps {
 			if (value.equals(n.getNodeValue()))
 				return;
 		}
-		String mens=rb.getString("testPresenceWithGuard");
-		String err=MessageFormat.format(mens, new Object[]{value});
-		throw new Exception(err);
+		throw new Exception(messages.getString("testPresenceWithGuard", value));
 	}
 
 	@Entonces("^el nombre del nodo raíz es (.+)$")
 	@Then("^the root node name is (.+)$")
 	public void rootNodeName(String name) throws Throwable {
-		String mens=rb.getString("rootNodeName");
-		String err=MessageFormat.format(mens, new Object[]{name});
-		assertTrue(err, name.equals(
+		assertTrue(messages.getString("rootNodeName", name), name.equals(
 					context().getNodeName()));
 	}
 
 	@Entonces("^la URI para el espacio de nombres del nodo raíz es (.+)")
 	@Then("^the root node namespace URI is (.+)$")
 	public void rootNodeNamespace(String namespaceURI) throws Throwable {
-		String mens=rb.getString("rootNodeNamespace");
-		String err=MessageFormat.format(mens, new Object[]{namespaceURI});
-		assertTrue(err, namespaceURI.equals(context().getNamespaceURI()));
+		assertTrue(messages.getString("rootNodeNamespace", namespaceURI), namespaceURI.equals(context().getNamespaceURI()));
 	}
 
 	@Entonces("^el atributo (\\w+) en el nodo raíz tiene valor (.+)$")
 	@Then("^the attribute (\\w+) in root node has value (.+)$")
 	public void rootNodeAttribute(String attr, String value) throws Throwable {
 		Node at = context().getAttributes().getNamedItem(attr);
-		String mens1=rb.getString("rootNodeAttribute1");
-		String err1=MessageFormat.format(mens1, new Object[]{attr});
-		assertTrue(err1, at != null);
-		String mens2=rb.getString("rootNodeAttribute2");
-		String err2=MessageFormat.format(mens2, new Object[]{attr,value});
-		assertTrue(err2, value.equals(at.getNodeValue()));
+		assertTrue(messages.getString("rootNodeAttribute1", attr), at != null);
+		assertTrue(messages.getString("rootNodeAttribute2", attr,value), value.equals(at.getNodeValue()));
 	}
 
 	@Entonces("^el valor de \"([^\"]*)\" en \"([^\"]*)\" tiene valor \"([^\"]*)\"$")
 	@Then("^the value of \"([^\"]*)\" in \"([^\"]*)\" has value \"([^\"]*)\"$")
 	public void valuePresent(String tag, String parent, String value)
 			throws Throwable {
-		String v = select(context(), "//" + parent + "/" + tag + "/text()",
-				String.class);
-		assertTrue("Tag [" + parent + "\\" + tag + "] has value [" + value
-				+ "]", value.equals(v));
+		assertEquals(value, select("//" + parent + "/" + tag + "/text()", String.class));
 	}
 
 	@Cuando("^no exist[ae] un nodo (.+) en la sección (.+)$")
@@ -292,9 +256,7 @@ public class TestSteps {
 	public void thereIsNotANodeInAGivenSection(String node, String section)
 			throws Throwable {
 		if (testSectionNode(section, node)) {
-			String mens=rb.getString("thenThereIsANodeInAGivenSection");
-			String err=MessageFormat.format(mens, new Object[]{node, section});
-			throw new PassVerdictException(err);
+			throw new PassVerdictException(messages.getString("thenThereIsANodeInAGivenSection", node, section));
 		}
 	}
 
@@ -303,9 +265,7 @@ public class TestSteps {
 	public void whenThereIsANodeInAGivenSection(String node, String section)
 			throws Throwable {
 		if (!testSectionNode(section, node)) {
-			String mens=rb.getString("thereIsNotANodeInAGivenSection");
-			String err=MessageFormat.format(mens, new Object[]{node, section});
-			throw new PassVerdictException(err);
+			throw new PassVerdictException(messages.getString("thereIsNotANodeInAGivenSection", node, section));
 		}
 	}
 
@@ -314,9 +274,7 @@ public class TestSteps {
 	@Then("^there is an? (.+) node in the (.+) section$")
 	public void thenThereIsANodeInAGivenSection(String node, String section)
 			throws Throwable {
-		String mens=rb.getString("thereIsNotANodeInAGivenSection");
-		String err=MessageFormat.format(mens, new Object[]{section,node});
-		assertTrue(err, testSectionNode(section, node));
+		assertTrue(messages.getString("thereIsNotANodeInAGivenSection", section,node), testSectionNode(section, node));
 	}
 
 	private boolean testSectionNode(String section, String node) {
@@ -326,7 +284,7 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		return select(context(), "//" + section + "/" + node).size() >0;
+		return select("//" + section + "/" + node).size() >0;
 	}
 
 	@Entonces("^existe un nodo (.+) en cada sección ([^\\s]+)$")
@@ -339,13 +297,11 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		List<Node> sections = select(context(), "//" + section);
+		List<Node> sections = select("//" + section);
 			for (int i = 0; i < sections.size(); i++) {
 				List<Node> nl2 = select(sections.get(i), node);
-				String mens1=rb.getString("thereIsANodeInEachOfTheGivenSection");
-				String err1=MessageFormat.format(mens1, new Object[]{section,String.valueOf(i+1),node,sections.get(i).getFirstChild().getNextSibling()
-								.getFirstChild().getTextContent()});
-				assertTrue(err1, nl2.size() > 0);
+				assertTrue(messages.getString("thereIsANodeInEachOfTheGivenSection", section, i+1,node,sections.get(i).getFirstChild().getNextSibling()
+						.getFirstChild().getTextContent()), nl2.size() > 0);
 			}
 	}
 
@@ -359,12 +315,10 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		List<Node> sections = select(context(), "//" + section);
+		List<Node> sections = select("//" + section);
 			for (int i = 0; i < sections.size(); i++) {
 				String s = select(sections.get(i), "@"+attribute, String.class);
-				String mens1=rb.getString("thereIsAnAttributeInEachOfTheGivenSection");
-				String err1=MessageFormat.format(mens1, new Object[]{section,attribute});
-				assertTrue(err1, s!=null&&s.trim().length()>0);
+				assertTrue(messages.getString("thereIsAnAttributeInEachOfTheGivenSection", section,attribute), s!=null&&s.trim().length()>0);
 			}
 	}
 	
@@ -377,7 +331,6 @@ public class TestSteps {
 	public void launchGetMapRequest(String paramName, String paramValue) {
 		String baseRequest = "";
 		String url = select(
-				context(),
 				"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",
 				String.class);
 		String floatingParam = "";
@@ -403,14 +356,13 @@ public class TestSteps {
 		}
 
 		if (!"version".equalsIgnoreCase(paramName)) {
-			String version = select(context(),
+			String version = select(
 					"/*/@*[local-name()='version']", String.class);
 			baseRequest = baseRequest + "&VERSION=" + version;
 		}
 		String format = "";
 		if (!"format".equalsIgnoreCase(paramName)) {
 			format = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='Format'][1]",
 					String.class);
 			baseRequest = baseRequest + "&FORMAT=" + format;
@@ -419,7 +371,6 @@ public class TestSteps {
 		}
 		if (!"layers".equalsIgnoreCase(paramName)) {
 			String layer = select(
-					context(),
 					//"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='Name']",
 					"//*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Name']",
 					String.class);
@@ -428,12 +379,10 @@ public class TestSteps {
 		Node parentWithBBox = null;
 		if ("bbox".equalsIgnoreCase("bbox")) {
 			String minx = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='minx']",
 					String.class);
 			if (minx.equalsIgnoreCase("")) {
 				List<Node> parent = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]");
 				Node n = parent.get(0).getParentNode();
 				if (n.getNodeName().equalsIgnoreCase("Layer")) {
@@ -451,7 +400,6 @@ public class TestSteps {
 			String miny = null;
 			if (parentWithBBox == null) {
 				miny = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='miny']",
 						String.class);
 			} else {
@@ -463,7 +411,6 @@ public class TestSteps {
 			String maxx = null;
 			if (parentWithBBox == null) {
 				maxx = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxx']",
 						String.class);
 			} else {
@@ -475,7 +422,6 @@ public class TestSteps {
 			String maxy = null;
 			if (parentWithBBox == null) {
 				maxy = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxy']",
 						String.class);
 			} else {
@@ -491,7 +437,6 @@ public class TestSteps {
 			String crs = null;
 			if (parentWithBBox == null) {
 				crs = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='CRS']",
 						String.class);
 			} else {
@@ -504,7 +449,6 @@ public class TestSteps {
 		}
 		if ("style".equalsIgnoreCase(paramName)) {
 			String style = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='Style']/*[local-name()='Name']",
 					String.class);
 			baseRequest = baseRequest + "&STYLE=" + style;
@@ -513,9 +457,7 @@ public class TestSteps {
 			url = url + "?";
 		}
 		String contentType = contentType(request(url + "&" + baseRequest, parser(HTTPParser.class)));
-		String mens=rb.getString("launchGetMapRequest");
-		String err=MessageFormat.format(mens, new Object[]{url,baseRequest,contentType});
-		assertTrue(err, contentType.toLowerCase().equals(format.toLowerCase()));
+		assertTrue(messages.getString("launchGetMapRequest", url,baseRequest,contentType), contentType.toLowerCase().equals(format.toLowerCase()));
 	}
 
 	@Entonces("^la URI del esquema declarada es (.+)$")
@@ -525,13 +467,9 @@ public class TestSteps {
 		Node n = nnm.getNamedItemNS(
 				"http://www.w3.org/2001/XMLSchema-instance",
 				"schemaLocation");
-		String mens1=rb.getString("schemaURIIs1");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1, n != null);
+		assertTrue(messages.getString("schemaURIIs1"), n != null);
 		String schema = n.getNodeValue().trim();
-		String mens2=rb.getString("schemaURIIs2");
-		String err2=MessageFormat.format(mens2, new Object[]{schema, schemaUri});
-		assertTrue(err2,schema.trim().startsWith(schemaUri));
+		assertTrue(messages.getString("schemaURIIs2",schema, schemaUri),schema.trim().startsWith(schemaUri));
 	}
 	
 	@Entonces("^la localización del esquema declarada es (.+)$")
@@ -541,22 +479,15 @@ public class TestSteps {
 		Node n = nnm.getNamedItemNS(
 				"http://www.w3.org/2001/XMLSchema-instance",
 				"schemaLocation");
-		String mens1=rb.getString("schemaLocationIs1");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1, n != null);
+		assertTrue(messages.getString("schemaLocationIs1"), n != null);
 		String schema = n.getNodeValue().trim();
-		String mens2=rb.getString("schemaLocationIs2");
-		String err2=MessageFormat.format(mens2, new Object[]{schema, schemaLocation});
-		assertTrue(err2,schema.trim().endsWith(schemaLocation));
+		assertTrue(messages.getString("schemaLocationIs2", schema, schemaLocation),schema.endsWith(schemaLocation));
 	}
 	
 	@Entonces("^la descripción del servicio debe cumplir con el XMLSchema de INSPIRE$")
 	@Then("^the service description must comply with the INSPIRE XMLSchema$")
 	public void checkAgainstXMLSCHEMA() {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
+		String serviceType=guessServiceType();
 		if(serviceType.equalsIgnoreCase("CSW")){
 			checkCSWschema();
 		}else if(serviceType.equalsIgnoreCase("WMS")){
@@ -586,9 +517,7 @@ public class TestSteps {
 			if(!match){
 				match = schema.matches(cswNS2 + "\\s+" + cswSL2 + "\\s+" + cswNS1 + "\\s+" + cswSL1);
 			}
-			String mens1=rb.getString("checkCSWschema1");
-			String err1=MessageFormat.format(mens1, new Object[]{});
-			assertTrue(err1,match);
+			assertTrue(messages.getString("checkCSWschema1"),match);
 		}
 
 		SAXParser parser = new SAXParser();
@@ -602,9 +531,7 @@ public class TestSteps {
 					true);
 
 		} catch (SAXException e) {
-			String mens2=rb.getString("checkCSWschema2");
-			String err2=MessageFormat.format(mens2, new Object[]{});
-			throw new RuntimeException(err2);
+			throw new RuntimeException(messages.getString("checkCSWschema2"));
 		}
 		String cap = createXML(context().getOwnerDocument());
 		InputSource iss = null;
@@ -619,10 +546,7 @@ public class TestSteps {
 		try {
 			parser.parse(iss);
 		} catch (Exception e) {
-			String mens3=rb.getString("checkCSWschema3");
-			String err3=MessageFormat.format(mens3, new Object[]{e.getMessage()});
-			throw new RuntimeException(err3);
-
+			throw new RuntimeException(messages.getString("checkCSWschema3",e.getMessage()));
 		}
 	}
 
@@ -652,9 +576,7 @@ public class TestSteps {
 					match = schema.matches(wmstNS1 + "\\s+" + wmstSL1 + "\\s+"
 							+ wmstNS2 + "\\s+" + wmstSL2);
 				}
-				String mens=rb.getString("checkWMSWMSTschema1");
-				String err=MessageFormat.format(mens, new Object[]{});
-				assertTrue(err,	match);
+				assertTrue(messages.getString("checkWMSWMSTschema1"), match);
 			}
 		}
 		if (document.getOwnerDocument().getDoctype() != null) {
@@ -686,9 +608,7 @@ public class TestSteps {
 		try {
 			parser.parse(iss);
 		} catch (Exception e) {
-			String mens=rb.getString("checkWMSWMSTschema2");
-			String err=MessageFormat.format(mens, new Object[]{});
-			throw new RuntimeException(err+"\n"+e.getMessage());
+			throw new RuntimeException(messages.getString("checkWMSWMSTschema2")+"\n"+e.getMessage());
 
 		}
 	}
@@ -696,18 +616,14 @@ public class TestSteps {
 	@Entonces("^una consulta con los parámetros (.)+ debe devolver la descripción del servicio$")
 	@Then("^a query with parameters (.+) should return a service description$")
 	public void launchcapabilitiesQuery(String params) {
-		String capabilitiesURL=select(context(),"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetCapabilities']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",String.class);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		String capabilitiesURL=select("//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetCapabilities']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",String.class);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
 		Node capabilities = request(capabilitiesURL + "?" + params,
 				parser(XMLValidatingParser.class).validate(false));
-		String mens2=rb.getString("launchcapabilitiesQuery2");
-		String err2=MessageFormat.format(mens2, new Object[]{});
-		assertTrue(err2, capabilities!=null);
+		assertTrue(messages.getString("launchcapabilitiesQuery2"), capabilities!=null);
 		checkWMSWMSTschema(capabilities);
 
 	}
@@ -716,25 +632,18 @@ public class TestSteps {
 	@Then("^MetadataUrl section should contain a getRecordById query$")
 	public void metadataUrlSectionShouldContainAGetRecordByIdQuery() {
 		String getRecById = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']/*[local-name()='MetadataUrl']/*[local-name()='URL']",
 				String.class);
 		if ("".equals(getRecById)) {
 			getRecById = null;
 		}
-		String mens=rb.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery1");
-		String err=MessageFormat.format(mens, new Object[]{});
-		assertTrue(err,getRecById!=null);
+		assertTrue(messages.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery1"),getRecById!=null);
 
 		if (!getRecById.toLowerCase().contains("request=getrecordbyid")) {
-			String mens2=rb.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery2");
-			String err2=MessageFormat.format(mens2, new Object[]{});
-			throw new RuntimeException(err2);
+			throw new RuntimeException(messages.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery2"));
 		}
 		if (!getRecById.toLowerCase().contains("id=")) {
-			String mens3=rb.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery3");
-			String err3=MessageFormat.format(mens3, new Object[]{});
-			throw new RuntimeException(err3);
+			throw new RuntimeException(messages.getString("metadataUrlSectionShouldContainAGetRecordByIdQuery3"));
 		}
 	}
 
@@ -743,22 +652,17 @@ public class TestSteps {
 	@Then("^MetadataUrl reference should point to an existing location")
 	public void metadataURLShouldPointToAnExistingLocation() {
 		String getRecById = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']/*[local-name()='MetadataUrl']/*[local-name()='URL']",
 				String.class);
 		if ("".equals(getRecById)) {
 			getRecById = null;
 		}
-		String mens=rb.getString("metadataURLShouldPointToAnExistingLocation1");
-		String err=MessageFormat.format(mens, new Object[]{});
 		assertTrue(
-				err,
+				messages.getString("metadataURLShouldPointToAnExistingLocation1"),
 				getRecById!=null);
 
 		int respCode = statusCode(request(getRecById, parser(HTTPParser.class)));
-		String mens2=rb.getString("metadataURLShouldPointToAnExistingLocation2");
-		String err2=MessageFormat.format(mens2, new Object[]{respCode});
-		assertTrue(err2,
+		assertTrue(messages.getString("metadataURLShouldPointToAnExistingLocation2", respCode),
 				respCode == 200);
 
 	}
@@ -767,9 +671,7 @@ public class TestSteps {
 	@Then("^there should be a Discovery Service Catalog serving its metadata$")
 	public void there_should_be_a_Discovery_Service_Catalog_serving_its_metadata()
 			throws Throwable {
-		String mens=rb.getString("there_should_be_a_Discovery_Service_Catalog_serving_its_metadata");
-		String err=MessageFormat.format(mens, new Object[]{});
-		throw new RuntimeException(err);
+		throw new RuntimeException(messages.getString("there_should_be_a_Discovery_Service_Catalog_serving_its_metadata"));
 	}
 
 	@Entonces("^el valor del nodo (.+) en la sección (.+) debe ser '(.+)'$")
@@ -782,14 +684,10 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		String result = select(context(), "//" + section + "//" + node
+		String result = select("//" + section + "//" + node
 				+ "[text()='" + value + "']", String.class);
-		String mens1=rb.getString("node_in_section_should_be_set_to1");
-		String err1=MessageFormat.format(mens1, new Object[]{section,node});
-		assertTrue(err1, result!=null);
-		String mens2=rb.getString("node_in_section_should_be_set_to2");
-		String err2=MessageFormat.format(mens2, new Object[]{section,node,value});
-		assertTrue(err2,result.equals(value));
+		assertTrue(messages.getString("node_in_section_should_be_set_to1", section,node), result!=null);
+		assertTrue(messages.getString("node_in_section_should_be_set_to2", section,node,value),result.equals(value));
 	}
 
 	@Entonces("^un nodo (.+) en cada una de las secciones (.+) dentro de la sección (.+) debe estar entre$")
@@ -811,7 +709,7 @@ public class TestSteps {
 			section = "*[local-name()='" + section + "']";
 		}
 
-		List<Node> subsections = select(context(), "//" + section + "/"
+		List<Node> subsections = select("//" + section + "/"
 				+ subsection);
 		for (int i = 0; i < subsections.size(); i++) {
 			boolean found = false;
@@ -824,9 +722,7 @@ public class TestSteps {
 					found = true;
 				}
 			}
-			String mens=rb.getString("node_in_each_section_should_be_in");
-			String err=MessageFormat.format(mens, new Object[]{values, nodes});
-			assertTrue(err, found);
+			assertTrue(messages.getString("node_in_each_section_should_be_in", values, nodes), found);
 		}
 	}
 
@@ -845,13 +741,11 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		List<Node> nodes = select(context(), "//" + section);
+		List<Node> nodes = select("//" + section);
 		for (int i = 0; i < nodes.size(); i++) {
 			String value = select(nodes.get(i), node, String.class);
 			if (!values.contains(value.toLowerCase())) {
-				String mens=rb.getString("each_node_in_section_should_be_in");
-				String err=MessageFormat.format(mens, new Object[]{section,i,node,value, values});
-				throw new RuntimeException(err);
+				throw new RuntimeException(messages.getString("each_node_in_section_should_be_in", section,i,node,value, values));
 			}
 		}
 	}
@@ -870,15 +764,13 @@ public class TestSteps {
 		Iterator<String> valuesIt = values.iterator();
 		while ((valuesIt.hasNext()) && (!found)) {
 			String value = valuesIt.next();
-			String result = select(context(), "//" + section + "//" + node
+			String result = select("//" + section + "//" + node
 					+ "[text()='" + value + "']", String.class);
 			if ((result != null) && (result.equals(value))) {
 				found = true;
 			}
 		}
-		String mens=rb.getString("node_in_section_should_be_in");
-		String err=MessageFormat.format(mens, new Object[]{section, node, values});
-		assertTrue(err, found);
+		assertTrue(messages.getString("node_in_section_should_be_in", section, node, values), found);
 	}
 
 	@Entonces("^cada (.+) en los (.+) de las secciones (.+) son enlaces válidos$")
@@ -894,15 +786,13 @@ public class TestSteps {
 		if (!attributeName.contains(":")) {
 			attributeName = "*[local-name()='" + attributeName + "']";
 		}
-		List<Node> nl = select(context(), "//" + sections + "/" + node
+		List<Node> nl = select("//" + sections + "/" + node
 				+ "/@" + attributeName);
 		for (int i = 0; i < nl.size(); i++) {
 			Node n = nl.get(i);
 			String url = n.getNodeValue();
 			int code = statusCode(request(url, parser(HTTPParser.class)));
-			String mens=rb.getString("node_each_linkage_in_node_is_valid");
-			String err=MessageFormat.format(mens, new Object[]{url});
-			assertTrue(err, code == 200);
+			assertTrue(messages.getString("node_each_linkage_in_node_is_valid", url), code == 200);
 		}
 	}
 
@@ -911,12 +801,10 @@ public class TestSteps {
 	public void check_keywords() {
 		Node thesaurus = get("INSPIRE.SpatialDataServicesClassification", Node.class);
 		List<Node> keywords = select(
-				context(),
 				"//*[local-name()='Service']/*[local-name()='KeywordList']/*[local-name()='Keyword']");
 		boolean found = false;
-		String mens1=rb.getString("check_keywords");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1,keywords.size() > 0);
+		String message=messages.getString("check_keywords");
+		assertTrue(message,keywords.size() > 0);
 		for (int i = 0; (i < keywords.size()) && (!found); i++) {
 			String keyword = keywords.get(i).getFirstChild().getNodeValue();
 			String exists = select(
@@ -927,7 +815,7 @@ public class TestSteps {
 				found = true;
 			}
 		}
-		assertTrue(err1,found);
+		assertTrue(message,found);
 	}
 
 	@Entonces("^existe un nodo (.+) en cada una de las secciones (.+) pertenecientes a la sección (.+)$")
@@ -943,21 +831,13 @@ public class TestSteps {
 		if (!subSection.contains(":")) {
 			subSection = "*[local-name()='" + subSection + "']";
 		}
-		/*
-		 * Object nl = select(context(), "//" + section + "/" + node); if (nl
-		 * instanceof Collection<?>) { if (((Collection<?>) nl).size() == 0) {
-		 * nl = null; } } else { nl = null; } assertThat("Node [" + section +
-		 * "\\" + node + "] exists", nl, is(notNullValue()));
-		 */
-		List<Node> sections = select(context(), "//" + section + "/"
+		List<Node> sections = select("//" + section + "/"
 				+ subSection);
 		try {
 			for (int i = 0; i <= sections.size(); i++) {
 				List<Node> nl2 = select(sections.get(i), node);
-				String mens=rb.getString("there_is_a_node_in_each_section_of_the_root_node");
-				String err=MessageFormat.format(mens, new Object[]{section,i,node,sections.get(i).getTextContent()});
-				assertTrue(err, nl2 != null);
-				assertTrue(err + sections.get(i).getTextContent(),
+				assertTrue(messages.getString("there_is_a_node_in_each_section_of_the_root_node", section,i,node,sections.get(i).getTextContent()), nl2 != null);
+				assertTrue(messages.getString("there_is_a_node_in_each_section_of_the_root_node", section,i,node,sections.get(i).getTextContent()) + sections.get(i).getTextContent(),
 						nl2.size()>0);
 			}
 
@@ -970,7 +850,7 @@ public class TestSteps {
 	@Then("^there is a wms\\:BoundingBox node in each wms\\:Layer section for each wms\\:CRS declared$")
 	public void testBoundingBoxes() {
 		// every Layers in the context() nodes are obtained
-		List<Node> layers = select(context(), "//*[local-name()='Layer']");
+		List<Node> layers = select("//*[local-name()='Layer']");
 		for (int i = 0; i < layers.size(); i++) {
 			Node layer = layers.get(i);
 			List<Node> crss = select(layer, "*[local-name()='CRS']");
@@ -988,9 +868,7 @@ public class TestSteps {
 								.equals("Layer"))) {
 					String title = select(layer, "*[local-name()='Title']",
 							String.class);
-					String mens=rb.getString("testBoundingBoxes");
-					String err=MessageFormat.format(mens, new Object[]{title,crs});
-					throw new RuntimeException(err);
+					throw new RuntimeException(messages.getString("testBoundingBoxes", title,crs));
 				}
 			}
 		}
@@ -1014,15 +892,11 @@ public class TestSteps {
 	@Entonces("^cada una de las Authoridades usadas ha sido declarada sólamente una vez$")
 	@Then("^every used Authority has been previouly declared just once$")
 	public void testDeclaredAuthorities() {
-		List<Node> identifiers = select(context(),
-				"//*[local-name()='Layer']/*[local-name()='Identifier']");
-		for (int i = 0; i < identifiers.size(); i++) {
-			Node identifier = identifiers.get(i);
+		for(Node identifier: select(
+				"//*[local-name()='Layer']/*[local-name()='Identifier']")) {
 			String authority = select(identifier,
 					"@*[local-name()='authority']", String.class);
-			String mens1=rb.getString("testDeclaredAuthorities1");
-			String err1=MessageFormat.format(mens1, new Object[]{identifier.getTextContent()});
-			assertTrue(err1, (authority != null) & (authority.trim().length() > 0));
+			assertTrue(messages.getString("testDeclaredAuthorities1", identifier.getTextContent()), (authority != null) & (authority.trim().length() > 0));
 			Node layer = identifier.getParentNode();
 			List<Node> auth = select(layer,
 					"*[local-name()='AuthorityURL'][@*[local-name()='name']='"
@@ -1031,9 +905,7 @@ public class TestSteps {
 					&& (layer.getParentNode().getNodeName().equals("Layer"))) {
 				testAuthorities(layer.getParentNode(), authority);
 			} else if (auth.size() == 0) {
-				String mens2=rb.getString("testDeclaredAuthorities2");
-				String err2=MessageFormat.format(mens2, new Object[]{authority});
-				throw new RuntimeException(err2);
+				throw new RuntimeException(messages.getString("testDeclaredAuthorities2", authority));
 			} else if (layer.getParentNode().getNodeName().equals("Layer")) {
 				try {
 					testAuthorities(layer.getParentNode(), authority);
@@ -1043,9 +915,7 @@ public class TestSteps {
 					// declared in any upper Layer,
 					// success
 				}
-				String mens3=rb.getString("testDeclaredAuthorities3");
-				String err3=MessageFormat.format(mens3, new Object[]{authority});
-				throw new RuntimeException(err3);
+				throw new RuntimeException(messages.getString("testDeclaredAuthorities3", authority));
 			}
 		}
 	}
@@ -1053,20 +923,14 @@ public class TestSteps {
 	@Entonces("^los pares identifier/authority son únicos$")
 	@Then("^pairs identifier/authority are unique$")
 	public void testUniqueIdentifiers() {
-		List<Node> identifiers = select(context(),
-				"//*[local-name()='Identifier']");
-		for (int i = 0; i < identifiers.size(); i++) {
-			Node identifier = identifiers.get(i);
-			String authority = select(identifier,
-					"@*[local-name()='authority']", String.class);
+
+		for(Node identifier: select("//*[local-name()='Identifier']")) {
+			String authority = select(identifier,"@*[local-name()='authority']", String.class);
 			String value = select(identifier, "text()", String.class);
-			List<Node> duplicated = select(context(),
-					"//*[local-name()='Identifier'][@*[local-name()='authority']='"
-							+ authority + "'][text()='" + value + "']");
-			if (duplicated.size() > 1) {
-				String mens=rb.getString("testUniqueIdentifiers");
-				String err=MessageFormat.format(mens, new Object[]{value, authority});
-				throw new RuntimeException(err);
+			String duplicateTextExpr = "//*[local-name()='Identifier'][@*[local-name()='authority']='"
+					+ authority + "'][text()='" + value + "']"; 
+			if (select(duplicateTextExpr).size() > 1) {
+				throw new RuntimeException(messages.getString("testUniqueIdentifiers", value, authority));
 			}
 		}
 	}
@@ -1080,13 +944,10 @@ public class TestSteps {
 		if (!section.contains(":")) {
 			section = "*[local-name()='" + section + "']";
 		}
-		List<Node> nodes = select(context(), "//" + section + "/" + node);
 		List<String> values = new LinkedList<String>();
-		for (int i = 0; i < nodes.size(); i++) {
-			String value = nodes.get(i).getTextContent();
-			String mens=rb.getString("value_is_unique_in_a_context");
-			String err=MessageFormat.format(mens, new Object[]{value});
-			assertTrue(err, !values.contains(value.toLowerCase()));
+		for(Node n: select("//" + section + "/" + node)) {
+			String value = n.getTextContent();
+			assertTrue(messages.getString("value_is_unique_in_a_context", value), !values.contains(value.toLowerCase()));
 			values.add(value.toLowerCase());
 		}
 	}
@@ -1099,9 +960,7 @@ public class TestSteps {
 				&& (layer.getParentNode().getNodeName().equals("Layer"))) {
 			testAuthorities(layer.getParentNode(), authority);
 		} else if (auth.size() == 0) {
-			String mens1=rb.getString("testAuthorities1");
-			String err1=MessageFormat.format(mens1, new Object[]{authority});
-			throw new RuntimeException(err1);
+			throw new RuntimeException(messages.getString("testAuthorities1", authority));
 		} else if (layer.getParentNode().getNodeName().equals("Layer")) {
 			try {
 				testAuthorities(layer.getParentNode(), authority);
@@ -1110,18 +969,14 @@ public class TestSteps {
 				// declared in any upper Layer,
 				// success
 			}
-			String mens2=rb.getString("testAuthorities2");
-			String err2=MessageFormat.format(mens2, new Object[]{authority});
-			throw new RuntimeException(err2);
+			throw new RuntimeException(messages.getString("testAuthorities2", authority));
 		}
 	}
 
 	@Entonces("^cada Capa tiene <inspire_common:DEFAULT> como uno de sus estilos$")
 	@Then("^each Layer has an <inspire_common:DEFAULT> as one of its styles$")
 	public void each_layer_has_a_default_style() {
-		List<Node> layers = select(context(), "//*[local-name()='Layer']");
-		for (int i = 0; i < layers.size(); i++) {
-			Node layer = layers.get(i);
+		for (Node layer: select("//*[local-name()='Layer']")){
 			String style = select(
 					layer,
 					"*[local-name()='Style']/*[local-name()='Name'][text()='inspire_common:DEFAULT']",
@@ -1131,16 +986,12 @@ public class TestSteps {
 					try {
 						testDefaultStyle(layer.getParentNode());
 					} catch (Throwable e) {
-						String mens1=rb.getString("each_layer_has_a_default_style1");
-						String err1=MessageFormat.format(mens1,new Object[]{select(layer, "*[local-name()='Name']",
-								String.class)});
-						throw new RuntimeException(err1);
+						throw new RuntimeException(messages.getString("each_layer_has_a_default_style1",select(layer, "*[local-name()='Name']",
+								String.class)));
 					}
 				} else {
-					String mens1=rb.getString("each_layer_has_a_default_style1");
-					String err1=MessageFormat.format(mens1, new Object[]{select(layer, "*[local-name()='Name']",
-									String.class)});
-					throw new RuntimeException(err1);
+					throw new RuntimeException(messages.getString("each_layer_has_a_default_style1",select(layer, "*[local-name()='Name']",
+							String.class)));
 				}
 			}
 		}
@@ -1155,9 +1006,7 @@ public class TestSteps {
 			if (parentNode.getParentNode().getNodeName().equals("Layer")) {
 				testDefaultStyle(parentNode.getParentNode());
 			} else {
-				String mens=rb.getString("testDefaultStyle");
-				String err=MessageFormat.format(mens, new Object[]{parentNode.getTextContent()});
-				throw new RuntimeException(err);
+				throw new RuntimeException(messages.getString("testDefaultStyle", parentNode.getTextContent()));
 			}
 		}
 
@@ -1167,10 +1016,8 @@ public class TestSteps {
 	@Then("^every Style has a valid legend in any of the supported languages$")
 	public void testLegendsInAnyLanguage() {
 		List<Node> supportedLanguages = select(
-				context(),
 				"//*[local-name()='SupportedLanguages']/*[local-name()='SupportedLanguage']/*[local-name()='Language']");
 		List<Node> defaultLanguage = select(
-				context(),
 				"//*[local-name()='SupportedLanguages']/*[local-name()='DefaultLanguage']/*[local-name()='Language']");
 		ArrayList<Node> languages = new ArrayList<Node>();
 		languages.addAll(supportedLanguages);
@@ -1179,13 +1026,10 @@ public class TestSteps {
 			Node language = supportedLanguages.get(i);
 			String lang = language.getTextContent();
 			String urlCap = select(
-					context(),
 					"//*[local-name()='Request']/*[local-name()='GetCapabilities']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",
 					String.class);
-			String mens1=rb.getString("testLegendsInAnyLanguage1");
-			String err1=MessageFormat.format(mens1, new Object[]{});
-			assertTrue(err1,urlCap != null);
-			assertTrue(err1,urlCap.trim().length()>0);
+			assertTrue(messages.getString("testLegendsInAnyLanguage1"),urlCap != null);
+			assertTrue(messages.getString("testLegendsInAnyLanguage1"),urlCap.trim().length()>0);
 			Node capabilitiesInALang = request(urlCap
 					+ "&request=GetCapabilities&service=WMS&language=" + lang,
 					parser(XMLValidatingParser.class).validate(false));
@@ -1206,17 +1050,13 @@ public class TestSteps {
 			if ((legend == null) || (legend.trim().length() == 0)) {
 				String styleName = select(style, "*[local-name()='Name']",
 						String.class);
-				String mens1=rb.getString("testLegendsInALanguage1");
-				String err1=MessageFormat.format(mens1, new Object[]{styleName,lang});
-				throw new RuntimeException(err1);
+				throw new RuntimeException(messages.getString("testLegendsInALanguage1", styleName,lang));
 			} else {
 				int responseCode = statusCode(request(legend, parser(HTTPParser.class)));
 				if (responseCode<0 || responseCode > 400) {
 					String styleName = select(style, "*[local-name()='Name']",
 							String.class);
-					String mens2=rb.getString("testLegendsInALanguage2");
-					String err2=MessageFormat.format(mens2, new Object[]{legend,styleName,lang,responseCode});
-					throw new RuntimeException(err2);
+					throw new RuntimeException(messages.getString("testLegendsInALanguage2", legend,styleName,lang,responseCode));
 				}
 			}
 		}
@@ -1250,16 +1090,10 @@ public class TestSteps {
 			List<Node> serviceException = select(request,
 					"//*[local-name()='ServiceException']");
 			if ((serviceException == null) || (serviceException.size() == 0)) {
-				String mens1=rb.getString("testARequestWithoutAParam1");
-				String err1=MessageFormat.format(mens1, new Object[]{paramName});
-				throw new RuntimeException(err1);
+				throw new RuntimeException(messages.getString("testARequestWithoutAParam1", paramName));
 			}
 		} else if (result.equalsIgnoreCase("image")) {
-			String mens2=rb.getString("testARequestWithoutAParam2");
-			String err2=MessageFormat.format(mens2, new Object[]{exception});
-			assertTrue(
-					"Exception should be included in an image with EXCEPTIONS="
-							+ exception,
+			assertTrue(messages.getString("testARequestWithoutAParam2", exception),
 					launchGetMapWithoutAParamReturnsAnImage(paramName,
 							"EXCEPTIONS=" + exception));
 		}
@@ -1280,7 +1114,6 @@ public class TestSteps {
 			String exceptionParam) {
 		String baseRequest = "";
 		String url = select(
-				context(),
 				"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",
 				String.class);
 		if (!paramName.toLowerCase().equals("request")) {
@@ -1298,21 +1131,19 @@ public class TestSteps {
 			baseRequest = baseRequest + "&height=100";
 		}
 		if (!paramName.toLowerCase().equals("version")) {
-			String version = select(context(),
+			String version = select(
 					"/*/@*[local-name()='version']", String.class);
 			baseRequest = baseRequest + "&VERSION=" + version.trim();
 		}
 		String format = "";
 		if (!paramName.toLowerCase().equals("format")) {
 			format = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='Format'][1]",
 					String.class);
 			baseRequest = baseRequest + "&FORMAT=" + format.trim();
 		}
 		if (!paramName.toLowerCase().equals("layers")) {
 			String layer = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='Name']",
 					String.class);
 			baseRequest = baseRequest + "&LAYERS=" + layer;
@@ -1320,12 +1151,10 @@ public class TestSteps {
 		Node parentWithBBox = null;
 		if (!paramName.toLowerCase().equals("bbox")) {
 			String minx = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='minx']",
 					String.class);
 			if (minx.equalsIgnoreCase("")) {
 				List<Node> parent = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]");
 				Node n = parent.get(0).getParentNode();
 				if (n.getNodeName().equalsIgnoreCase("Layer")) {
@@ -1343,7 +1172,6 @@ public class TestSteps {
 			String miny = null;
 			if (parentWithBBox == null) {
 				miny = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='miny']",
 						String.class);
 			} else {
@@ -1355,7 +1183,6 @@ public class TestSteps {
 			String maxx = null;
 			if (parentWithBBox == null) {
 				maxx = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxx']",
 						String.class);
 			} else {
@@ -1367,7 +1194,6 @@ public class TestSteps {
 			String maxy = null;
 			if (parentWithBBox == null) {
 				maxy = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxy']",
 						String.class);
 			} else {
@@ -1383,7 +1209,6 @@ public class TestSteps {
 			String crs = null;
 			if (parentWithBBox == null) {
 				crs = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='CRS']",
 						String.class);
 			} else {
@@ -1396,7 +1221,6 @@ public class TestSteps {
 		}
 		if (!paramName.toLowerCase().equals("style")) {
 			String style = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='Style']/*[local-name()='Name']",
 					String.class);
 			baseRequest = baseRequest + "&STYLE=" + style;
@@ -1416,7 +1240,6 @@ public class TestSteps {
 			String exceptionParam) {
 		String baseRequest = "";
 		String url = select(
-				context(),
 				"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",
 				String.class);
 		if (!paramName.toLowerCase().equals("request")) {
@@ -1433,20 +1256,18 @@ public class TestSteps {
 			baseRequest = baseRequest + "&height=100";
 		}
 		if (!paramName.toLowerCase().equals("version")) {
-			String version = select(context(),
+			String version = select(
 					"/*/@*[local-name()='version']", String.class);
 			baseRequest = baseRequest + "&VERSION=" + version.trim();
 		}
 		if (!paramName.toLowerCase().equals("format")) {
 			String format = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetMap']/*[local-name()='Format'][1]",
 					String.class);
 			baseRequest = baseRequest + "&FORMAT=" + format.trim();
 		}
 		if (!paramName.toLowerCase().equals("layers")) {
 			String layer = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='Name']",
 					String.class);
 			baseRequest = baseRequest + "&LAYERS=" + layer;
@@ -1454,12 +1275,10 @@ public class TestSteps {
 		Node parentWithBBox = null;
 		if (!paramName.toLowerCase().equals("bbox")) {
 			String minx = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='minx']",
 					String.class);
 			if (minx.equalsIgnoreCase("")) {
 				List<Node> parent = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]");
 				Node n = parent.get(0).getParentNode();
 				if (n.getNodeName().equalsIgnoreCase("Layer")) {
@@ -1477,7 +1296,6 @@ public class TestSteps {
 			String miny = null;
 			if (parentWithBBox == null) {
 				miny = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='miny']",
 						String.class);
 			} else {
@@ -1489,7 +1307,6 @@ public class TestSteps {
 			String maxx = null;
 			if (parentWithBBox == null) {
 				maxx = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxx']",
 						String.class);
 			} else {
@@ -1501,7 +1318,6 @@ public class TestSteps {
 			String maxy = null;
 			if (parentWithBBox == null) {
 				maxy = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='maxy']",
 						String.class);
 			} else {
@@ -1517,7 +1333,6 @@ public class TestSteps {
 			String crs = null;
 			if (parentWithBBox == null) {
 				crs = select(
-						context(),
 						"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='BoundingBox'][1]/@*[local-name()='CRS']",
 						String.class);
 			} else {
@@ -1530,7 +1345,6 @@ public class TestSteps {
 		}
 		if (!paramName.toLowerCase().equals("style")) {
 			String style = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer'][*[local-name()='Style']]/*[local-name()='Layer'][1]/*[local-name()='Style']/*[local-name()='Name']",
 					String.class);
 			baseRequest = baseRequest + "&STYLE=" + style;
@@ -1550,7 +1364,6 @@ public class TestSteps {
 				String.class);
 		if (minx.equalsIgnoreCase("")) {
 			List<Node> parent = select(
-					context(),
 					"//*[local-name()='Capability']/*[local-name()='Layer']/*[local-name()='Layer'][*[local-name()='Style']][1]");
 			Node n = parent.get(0).getParentNode();
 			if (n.getNodeName().equalsIgnoreCase("Layer")) {
@@ -1570,7 +1383,7 @@ public class TestSteps {
 			node = "*[local-name()='" + node + "']";
 		}
 		Node thesaurus = get("INSPIRE.Languages", Node.class);
-		List<Node> languages = select(context(), "//" + node
+		List<Node> languages = select("//" + node
 				+ "//*[local-name()='Language']");
 		for (int i = 0; i < languages.size(); i++) {
 			Node language = languages.get(i);
@@ -1580,9 +1393,7 @@ public class TestSteps {
 					"/*[local-name()='RDF']/*[local-name()='Description']/*[local-name()='prefLabel'][@*[local-name()='lang']='zxx'][text()='"
 							+ lang + "']", String.class);
 			if ((official == null) || (official.trim().length() == 0)) {
-				String mens=rb.getString("validateDeclaredLanguagesInASection");
-				String err=MessageFormat.format(mens, new Object[]{lang});
-				throw new RuntimeException(err);
+				throw new RuntimeException(messages.getString("validateDeclaredLanguagesInASection",lang));
 			}
 		}
 	}
@@ -1590,19 +1401,14 @@ public class TestSteps {
 	@Entonces("^una respuesta GetCapabilities en el idioma por defecto es diferente de las obtenidas en cada uno de los idiomas soportados$")
 	@Then("^GetCapabilities response in default language is different from the response in the other supported languages$")
 	public void responseIsDifferentForEverySupportedLanguage() {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		responseIsDifferentForEverySupportedLanguage(serviceType);
+		responseIsDifferentForEverySupportedLanguage(guessServiceType());
 	}
 	
 	public void responseIsDifferentForEverySupportedLanguage(String serviceType) {
-		List<Node> languages = select(context(),
+		List<Node> languages = select(
 				"//*[local-name()='ExtendedCapabilities']//*[local-name()='Language']");
 		HashMap<String, String> receivedcapabilities = new HashMap<String, String>();
 		String defaultLang = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']//*[local-name()='DefaultLanguage']/*[local-name()='Language']",
 				String.class);
 		if (defaultLang == null) {
@@ -1618,9 +1424,7 @@ public class TestSteps {
 			String lang = language.getTextContent();
 			if (!lang.equalsIgnoreCase(defaultLang)) {
 				String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-				String mens1=rb.getString("launchcapabilitiesQuery1");
-				String err1=MessageFormat.format(mens1, new Object[]{} );
-				assertTrue(err1,capabilitiesURL.trim().length()>0);
+				assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 				if(!capabilitiesURL.contains("?")){
 					capabilitiesURL=capabilitiesURL+"?";
 				}
@@ -1630,9 +1434,7 @@ public class TestSteps {
 				content = content.replaceAll("\\s+", " ").toLowerCase();
 				if (receivedcapabilities.containsKey(content)) {
 					String prevLang = receivedcapabilities.get(content);
-					String mens=rb.getString("responseIsDifferentForEverySupportedLanguage");
-					String err=MessageFormat.format(mens, new Object[]{prevLang});
-					throw new RuntimeException(err);
+					throw new RuntimeException(messages.getString("responseIsDifferentForEverySupportedLanguage", prevLang));
 				}
 				receivedcapabilities.put(lang, content);
 			}
@@ -1642,22 +1444,15 @@ public class TestSteps {
 	@Entonces("^una respuesta GetCapabilities en un idioma no soportado es la misma que la recibida con el idioma por defecto$")
 	@Then("^GetCapabilities response is the same as with default language response when language is not suppoted$")
 	public void responseIsTheSameWithNotSuportedLanguage() {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		responseIsTheSameWithNotSuportedLanguage(serviceType);
+		responseIsTheSameWithNotSuportedLanguage(guessServiceType());
 	}
 	
 	public void responseIsTheSameWithNotSuportedLanguage(String serviceType) {
 		String defaultLang = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']//*[local-name()='DefaultLanguage']/*[local-name()='Language']",
 				String.class);
 		String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"), capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
@@ -1670,28 +1465,22 @@ public class TestSteps {
 		receivedStrUns = receivedStrUns.replaceAll("\\s+", " ").toLowerCase();
 		String receivedStrDef = receivedDef.getTextContent().trim();
 		receivedStrDef = receivedStrDef.replaceAll("\\+", " ").toLowerCase();
-		String mens=rb.getString("responseIsTheSameWithNotSuportedLanguage");
-		String err=MessageFormat.format(mens, new Object[]{unsupportedLang});
-		assertTrue(	err, !receivedStrDef.equals(receivedStrUns));
+		assertTrue(messages.getString("responseIsTheSameWithNotSuportedLanguage", unsupportedLang), !receivedStrDef.equals(receivedStrUns));
 
 	}
 
 	@Entonces("^una respuesta GetCapabilities sin especificar un idioma es la misma que la recibida con el idioma por defecto$")
 	@Then("^GetCapabilities response is the same as with default language response when no language is specified$")
 	public void responseIsTheSameWithNotSpecifiedLanguage() {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		responseIsTheSameWithNotSpecifiedLanguage(serviceType);
+		responseIsTheSameWithNotSpecifiedLanguage(guessServiceType());
 	}
 	
 	public String getGetCapabilitiesURL(String serviceType){
 		if(serviceType.trim().equalsIgnoreCase("WMS")){
-			String capabilitiesURL=select(context(),"//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetCapabilities']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",String.class);
+			String capabilitiesURL=select("//*[local-name()='Capability']/*[local-name()='Request']/*[local-name()='GetCapabilities']/*[local-name()='DCPType']/*[local-name()='HTTP']/*[local-name()='Get']/*[local-name()='OnlineResource']/@*[local-name()='href']",String.class);
 			return capabilitiesURL;
 		}else if(serviceType.trim().equalsIgnoreCase("CSW")){
-			String capabilitiesURL=select(context(),"//*[local-name()='OperationsMetadata']/*[local-name()='Operation'][@*[local-name()='name']='GetCapabilities']/*[local-name()='DCP']/*[local-name()='HTTP']/*[local-name()='Get']/@*[local-name()='href']",String.class);
+			String capabilitiesURL=select("//*[local-name()='OperationsMetadata']/*[local-name()='Operation'][@*[local-name()='name']='GetCapabilities']/*[local-name()='DCP']/*[local-name()='HTTP']/*[local-name()='Get']/@*[local-name()='href']",String.class);
 			return capabilitiesURL;
 		}
 		return null;
@@ -1699,13 +1488,10 @@ public class TestSteps {
 	
 	public void responseIsTheSameWithNotSpecifiedLanguage(String serviceType) {
 		String defaultLang = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']//*[local-name()='DefaultLanguage']/*[local-name()='Language']",
 				String.class);
 		String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
@@ -1716,9 +1502,7 @@ public class TestSteps {
 				.toLowerCase();
 		String receivedStrDef = receivedDef.getTextContent().trim();
 		receivedStrDef = receivedStrDef.replaceAll("\\+", " ").toLowerCase();
-		String mens2=rb.getString("responseIsTheSameWithNotSpecifiedLanguage");
-		String err2=MessageFormat.format(mens2, new Object[]{});
-		assertTrue(err2,
+		assertTrue(messages.getString("responseIsTheSameWithNotSpecifiedLanguage"),
 				!receivedStrDef.equals(receivedStrNoLang));
 
 	}
@@ -1730,7 +1514,6 @@ public class TestSteps {
 	@When("^there are federated catalogues declared$")
 	public void thereAreFederatedCatalogues() {
 		List<Node> constraints = select(
-				context(),
 				"//*[local-name()='Constraint'][@*[local-name()='name']='FederatedCatalogues']/*[local-name()='Value']");
 		if(constraints.size()<=0){
 			throw new PassVerdictException("There are no Federated Catalogues declared");
@@ -1741,7 +1524,6 @@ public class TestSteps {
 	@Then("^each federated catalogue should reply correctly to a GetCapabilities query$")
 	public void eachFederatedCatalogueReturnsOk() {
 		List<Node> constraints = select(
-				context(),
 				"//*[local-name()='Constraint'][@*[local-name()='name']='FederatedCatalogues']/*[local-name()='Value']");
 		for (int i = 0; i < constraints.size(); i++) {
 			Node fedCat = constraints.get(i);
@@ -1757,15 +1539,11 @@ public class TestSteps {
 			try {
 				Node response = request(url, parser(XMLValidatingParser.class)
 						.validate(false));
-				String mens1=rb.getString("eachFederatedCatalogueReturnsOk1");
-				String err1=MessageFormat.format(mens1, new Object[]{url});
-				assertTrue(err1,
+				assertTrue(messages.getString("eachFederatedCatalogueReturnsOk1", url),
 						response.getLocalName()
 								.equalsIgnoreCase("context()"));
 			} catch (Exception e) {
-				String mens2=rb.getString("eachFederatedCatalogueReturnsOk2");
-				String err2=MessageFormat.format(mens2, new Object[]{url});
-				throw new RuntimeException(err2);
+				throw new RuntimeException(messages.getString("eachFederatedCatalogueReturnsOk2", url));
 			}
 		}
 	}
@@ -1782,7 +1560,7 @@ public class TestSteps {
 			if (!value.contains(":")) {
 				value = "*[local-name()='" + value + "']";
 			}
-			List<Node> result = select(context(), "//" + node + "//" + value);
+			List<Node> result = select("//" + node + "//" + value);
 			if (result.size() > 0) {
 				found = true;
 			}
@@ -1795,11 +1573,9 @@ public class TestSteps {
 	@Then("^a GetRecords query with anytext set to \\* and language set to default should return some metadata$")
 	public void sendGetRecordsQuery() {
 		String getRecordsUrl = select(
-				context(),
 				"//*[local-name()='Operation'][@*[local-name()='name']='GetRecords']/*[local-name()='DCP']/*[local-name()='HTTP']/*[local-name()='Post']/@*[local-name()='href']",
 				String.class);
 		String defaultLanguage = select(
-				context(),
 				"//*[local-name()='ExtendedCapabilities']/*[local-name()='SupportedLanguages']/*[local-name()='DefaultLanguage']/*[local-name()='Language']",
 				String.class);
 		String getRecordsSqueleton = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
@@ -1833,23 +1609,16 @@ public class TestSteps {
 		String getRec = getRecordsSqueleton.replace("$LANGUAGE$",
 				defaultLanguage);
 		Node n = requestPost(getRecordsUrl, getRec);
-		String mens1=rb.getString("sendGetRecordsQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1, n!=null);
-		String numberOfRecordsMatched = select(
+		assertTrue(messages.getString("sendGetRecordsQuery1"), n!=null);
+		Double numberOfRecordsMatched = select(
 				n,
 				"//*[local-name()='GetRecordsResponse']/*[local-name()='SearchResults']/@*[local-name()='numberOfRecordsMatched']",
-				String.class);
+				Double.class);
 		try {
-			int norm = Integer.parseInt(numberOfRecordsMatched);
-			String mens2=rb.getString("sendGetRecordsQuery2");
-			String err2=MessageFormat.format(mens2, new Object[]{});
-			assertTrue(err2,
-					norm > 0);
+			assertTrue(messages.getString("sendGetRecordsQuery2"),
+					numberOfRecordsMatched > 0);
 		} catch (Exception e) {
-			String mens3=rb.getString("sendGetRecordsQuery1");
-			String err3=MessageFormat.format(mens3, new Object[]{});
-			throw new RuntimeException(err3);
+			throw new RuntimeException(messages.getString("sendGetRecordsQuery1"));
 		}
 	}
 
@@ -1857,7 +1626,6 @@ public class TestSteps {
 	@Then("^a metadata resulting from a GetRecords query should be a valid INSPIRE metadata$")
 	public void checkMetadataINSPIRECompliance() {
 		String getRecordsUrl = select(
-				context(),
 				"//*[local-name()='Operation'][@*[local-name()='name']='GetRecords']/*[local-name()='DCP']/*[local-name()='HTTP']/*[local-name()='Post']/@*[local-name()='href']",
 				String.class);
 		// inicio temporal
@@ -1886,9 +1654,7 @@ public class TestSteps {
 		List<Node> records = select(
 				n,
 				"/*[local-name()='GetRecordsResponse']/*[local-name()='SearchResults']/*[local-name()='MD_Metadata'][1]");
-		String mens1=rb.getString("checkMetadataINSPIRECompliance1");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1,
+		assertTrue(messages.getString("checkMetadataINSPIRECompliance1"),
 				records.size() > 0);
 		String record = createXML(records.get(0));
 
@@ -1911,9 +1677,7 @@ public class TestSteps {
 			httpPost.setEntity(reqEntity);
 			HttpResponse response = httpclient.execute(httpPost);
 			int statusCode = response.getStatusLine().getStatusCode();
-			String mens2=rb.getString("checkMetadataINSPIRECompliance2");
-			String err2=MessageFormat.format(mens2, new Object[]{statusCode});
-			assertTrue(err2,
+			assertTrue(messages.getString("checkMetadataINSPIRECompliance2", statusCode),
 					statusCode < 400);
 
 			InputStream is = response.getEntity().getContent();
@@ -1939,22 +1703,16 @@ public class TestSteps {
 					validation,
 					"/*[local-name()='wrapper']/*[local-name()='div'][@*[local-name()='id']='incorrectList']/*[local-name()='ul']",
 					String.class);
-			String mens3=rb.getString("checkMetadataINSPIRECompliance3");
-			String err3=MessageFormat.format(mens3, new Object[]{});
 			assertTrue(
-					err3,
+					messages.getString("checkMetadataINSPIRECompliance3"),
 					incorrectElements!=null);
-			String mens4=rb.getString("checkMetadataINSPIRECompliance4");
-			String err4=MessageFormat.format(mens4, new Object[]{incorrectElements, incorrectElementsContent});
 			assertTrue(
-					err4,
+					messages.getString("checkMetadataINSPIRECompliance4", incorrectElements, incorrectElementsContent),					
 					incorrectElements
 							.equalsIgnoreCase("Number of incorrect elements found: 0"));
 
 		} catch (Exception e) {
-			String mens5=rb.getString("checkMetadataINSPIRECompliance5");
-			String err5=MessageFormat.format(mens5, new Object[]{e});
-			throw new RuntimeException(err5);
+			throw new RuntimeException(messages.getString("checkMetadataINSPIRECompliance5", e));
 		}
 
 	}
@@ -1963,16 +1721,11 @@ public class TestSteps {
 	@Then("^ISO profile is declared as a Constraint in the OperationsMetadata section$")
 	public void isoProfileIsDeclared() {
 		String s = select(
-				context(),
 				"//*[local-name()='OperationsMetadata']/*[local-name()='Constraint'][@*[local-name()='name']='IsoProfiles']/*[local-name()='Value']",
 				String.class);
-		String mens1=rb.getString("isoProfileIsDeclared1");
-		String err1=MessageFormat.format(mens1, new Object[]{});
-		assertTrue(err1, s!=null);
-		String mens2=rb.getString("isoProfileIsDeclared2");
-		String err2=MessageFormat.format(mens2, new Object[]{});
+		assertTrue(messages.getString("isoProfileIsDeclared1"), s!=null);
 		assertTrue(
-				err2,
+				messages.getString("isoProfileIsDeclared2"),
 				s.equals("http://www.isotc211.org/2005/gmd"));
 	}
 
@@ -1981,16 +1734,13 @@ public class TestSteps {
 	public void checkParamValueInOperation(String value, String paramName,
 			String operation) {
 		List<Node> values = select(
-				context(),
 				"//*[local-name()='OperationsMetadata']/*[local-name()='Operation'][@*[local-name()='name']='"
 						+ operation
 						+ "']/*[local-name()='Parameter'][@*[local-name()='name']='"
 						+ paramName
 						+ "']/*[local-name()='Value'][text()='"
 						+ value + "']");
-		String mens=rb.getString("checkParamValueInOperation");
-		String err=MessageFormat.format(mens, new Object[]{value, paramName, operation});
-		assertTrue(err,
+		assertTrue(messages.getString("checkParamValueInOperation", value, paramName, operation),
 				values.size() > 0);
 
 	}
@@ -2000,16 +1750,13 @@ public class TestSteps {
 	public void checkConstraintValueInOperation(String value, String constName,
 			String operation) {
 		List<Node> values = select(
-				context(),
 				"//*[local-name()='OperationsMetadata']/*[local-name()='Operation'][@*[local-name()='name']='"
 						+ operation
 						+ "']/*[local-name()='Constraint'][@*[local-name()='name']='"
 						+ constName
 						+ "']/*[local-name()='Value'][text()='"
 						+ value + "']");
-		String mens=rb.getString("checkConstraintValueInOperation");
-		String err=MessageFormat.format(mens, new Object[]{value,constName,operation});
-		assertTrue(err, values.size() > 0);
+		assertTrue(messages.getString("checkConstraintValueInOperation", value,constName,operation), values.size() > 0);
 	}
 
 	@Entonces("^existe un nodo (.+) en la operación (.+) con el atributo (.+) con valor (.+)$")
@@ -2023,13 +1770,11 @@ public class TestSteps {
 		if (!attributeName.contains(":")) {
 			attributeName = "*[local-name()='" + attributeName + "']";
 		}
-		List<Node> values = select(context(),
+		List<Node> values = select(
 				"//*[local-name()='Operation'][@*[local-name()='name']='"
 						+ operation + "']/" + node + "[@" + attributeName
 						+ "='" + attributeValue + "']");
-		String mens=rb.getString("checkAttributeValueOnANode");
-		String err=MessageFormat.format(mens, new Object[]{node,operation,originalAttributeName,attributeValue});
-		assertTrue(err, values.size() > 0);
+		assertTrue(messages.getString("checkAttributeValueOnANode", node,operation,originalAttributeName,attributeValue), values.size() > 0);
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -2043,7 +1788,6 @@ public class TestSteps {
 		}
 		
 		String getRecordsUrl = select(
-				context(),
 				"//*[local-name()='Operation'][@*[local-name()='name']='GetRecords']/*[local-name()='DCP']/*[local-name()='HTTP']/*[local-name()='Post']/@*[local-name()='href']",
 				String.class);
 		// inicio temporal
@@ -2074,25 +1818,31 @@ public class TestSteps {
 			List<Node> languagesReturned=select(response,"//*[local-name()='MD_Metadata']/*[local-name()='language']/*");
 			for(int j=0;j<languagesReturned.size();j++){
 				Node langret=languagesReturned.get(j);
-				String mens=rb.getString("checkGetRecordsWithLanguage");
-				String err=MessageFormat.format(mens, new Object[]{String.valueOf(i+1),lang,getRecQ});
-				assertTrue(err,langret.getTextContent().equals(lang));
+				assertTrue(messages.getString("checkGetRecordsWithLanguage", i+1,lang,getRecQ),langret.getTextContent().equals(lang));
 			}
 		}
 		
 		
 	}
 
-	//
-	//	Utility functions
-	//
+	// ////////////////////////////////////////////////////////////////////////
+	// Utility functions
+	// ////////////////////////////////////////////////////////////////////////
+	
+	/**
+	 * Guess service type from tags {@code ServiceIdentification/ServiceType} and {@code Service/Name}.
+	 * @return
+	 */
+	private String guessServiceType() {
+		String serviceType=select("//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
+		if((serviceType==null)||(serviceType.trim().length()==0)){
+			serviceType=select("//*[local-name()='Service']/*[local-name()='Name']",String.class);
+		}
+		return serviceType;
+	}
 	
 	private void requestForLanguage(String lang) {
-		String serviceType=select(context(), "//*[local-name()='ServiceIdentification']/*[local-name()='ServiceType']",String.class);
-		if((serviceType==null)||(serviceType.trim().length()==0)){
-			serviceType=select(context(), "//*[local-name()='Service']/*[local-name()='Name']",String.class);
-		}
-		requestForLanguage(lang, serviceType);
+		requestForLanguage(lang, guessServiceType());
 	}
 	
 	private void requestForLanguage(String lang,String serviceType) {
@@ -2101,25 +1851,19 @@ public class TestSteps {
 		}
 		get("requestedLanguages", List.class).add(lang);
 		String capabilitiesURL=getGetCapabilitiesURL(serviceType);
-		String mens1=rb.getString("launchcapabilitiesQuery1");
-		String err1=MessageFormat.format(mens1, new Object[]{} );
-		assertTrue(err1,capabilitiesURL.trim().length()>0);
+		assertTrue(messages.getString("launchcapabilitiesQuery1"),capabilitiesURL.trim().length()>0);
 		if(!capabilitiesURL.contains("?")){
 			capabilitiesURL=capabilitiesURL+"?";
 		}
 		String ureq = capabilitiesURL+"&request=GetCapabilities&service="+serviceType + "&LANGUAGE=" + lang;
 		Node requestedCapabilities = request(ureq,
 				parser(XMLValidatingParser.class).validate(false));
-		String mens=rb.getString("requestForLanguage1");
-		String err=MessageFormat.format(mens, new Object[]{ureq});
-		assertTrue(err,
+		assertTrue(messages.getString("requestForLanguage1",ureq),
 				requestedCapabilities !=null);
 		String rlang = select(requestedCapabilities,
 				"//inspire_common:ResponseLanguage/inspire_common:Language",
 				String.class);
-		String mens2=rb.getString("requestForLanguage2");
-		String err2=MessageFormat.format(mens2, new Object[]{ureq});
-		assertTrue(err2,
+		assertTrue(messages.getString("requestForLanguage2",ureq),
 				rlang != null);
 		if (!isset("retrievedLanguages")) {
 			set("retrievedLanguages", new ArrayList<String>());
