@@ -1,0 +1,78 @@
+<project name="ctl-inspire" basedir="." default="runcukes" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+	<path id="maven-ant-tasks.classpath" path="src/test/lib/maven-ant-tasks-2.1.3.jar" />
+	  <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+	           uri="antlib:org.apache.maven.artifact.ant"
+	           classpathref="maven-ant-tasks.classpath" />
+	<artifact:pom id="ctl-pom" file="pom.xml" />
+	<artifact:dependencies filesetId="ctl-deps" pomRefId="ctl-pom" useScope="test" />
+	<loadproperties srcfile="test.properties"/>
+	
+	<property name="jars" value="target/lib"/>
+
+    <target name="download">
+        <mkdir dir="${jars}"/>
+    	<copy todir="${jars}">
+    	  <fileset refid="ctl-deps" />
+    	  <mapper type="flatten" />
+    	</copy>    	
+    </target>
+
+    <target name="classpath">
+        <path id="classpath">
+            <fileset dir="${jars}">
+                <include name="**/*.jar"/>
+            </fileset>
+            <pathelement location="target/classes"/>
+            <pathelement location="target/test-classes"/>
+        </path>
+    </target>
+
+    <target name="compile" depends="classpath">
+        <mkdir dir="target/classes"/>
+        <javac srcdir="src/main/java" destdir="target/classes" classpathref="classpath" includeantruntime="false"/>
+    </target>
+
+    <target name="compile-test" depends="compile,classpath">
+        <mkdir dir="target/test-classes"/>
+        <javac srcdir="src/test/java" destdir="target/test-classes" classpathref="classpath" includeantruntime="false"/>
+        <copy todir="target/test-classes">
+    	 	<fileset dir="src/test/java">
+	    	   	<include name="**/*.properties"/>
+    	  	</fileset>
+    	</copy>
+   	</target>
+
+    <target name="runcukes" depends="compile-test">
+        <mkdir dir="target/cucumber-junit-report"/>
+        <java classname="cucumber.api.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+            <classpath refid="classpath"/>
+            <arg value="--format"/>
+            <arg value="junit:target/cucumber-junit-report.xml"/>
+            <arg value="--format"/>
+            <arg value="html:target/cucumber-html-report"/>
+            <arg value="--format"/>
+            <arg value="json:target/cucumber-junit-report.json"/>
+            <arg value="--glue"/>
+        	<arg value="es.unizar.iaaa.ctl.hooks.inspire.Hook"/>
+            <arg value="--glue"/>
+        	<arg value="es.unizar.iaaa.ctl.tests.inspire.TestSteps"/>
+        	<arg value="${ctl.features.path};glob:${ctl.features.glob}"/>
+        </java>
+        <fail message="Cucumber failed">
+            <condition>
+                <not>
+                    <equals arg1="${cucumber.exitstatus}" arg2="0"/>
+                </not>
+            </condition>
+        </fail>
+    </target>
+
+    <target name="clean">
+        <delete dir="target"/>
+    </target>
+
+    <target name="clobber" depends="clean">
+        <delete dir="${jars}"/>
+    </target>
+</project>

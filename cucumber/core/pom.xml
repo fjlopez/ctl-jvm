@@ -72,7 +72,19 @@
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>target/generated-sources/java</outputDirectory>
-									<excludes> cucumber/runtime/Runtime.java, cucumber/runtime/StepDefinitionMatch.java </excludes>
+									<excludes> cucumber/runtime/Runtime.java,
+										cucumber/runtime/StepDefinitionMatch.java,
+										cucumber/runtime/io/MultiLoader.java </excludes>
+								</artifactItem>
+								<artifactItem>
+									<groupId>info.cukes</groupId>
+									<artifactId>cucumber-core</artifactId>
+									<version>${cucumber.version}</version>
+									<classifier>sources</classifier>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>target/generated-sources/resources</outputDirectory>
+									<excludes> **/*.java </excludes>
 								</artifactItem>
 							</artifactItems>
 						</configuration>
@@ -94,6 +106,27 @@
 							<sources>
 								<source>target/generated-sources/java</source>
 							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<executions>
+					<execution>
+						<id>copy-resource</id>
+						<phase>process-classes</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+ 			              <outputDirectory>${project.build.outputDirectory}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>target/generated-sources/resources</directory>
+								</resource>
+							</resources>
 						</configuration>
 					</execution>
 				</executions>

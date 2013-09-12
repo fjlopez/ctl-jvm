@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(glue = { 
 		"es.unizar.iaaa.ctl.tests.inspire.TestSteps",
 		"es.unizar.iaaa.ctl.hooks.inspire.discovery31.IGNHooksEsn" }, features = {
-		"src/main/features/discovery31/discovery-31-ir-15_es.feature" })
+		"src/test/features/discovery31/discovery-31-ir-15_es.feature" })
 public class DiscoveryIR15TestEs {
 
 }

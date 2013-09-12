@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @Cucumber.Options(glue = { 
 		"es.unizar.iaaa.ctl.tests.inspire.TestSteps",
 		"es.unizar.iaaa.ctl.hooks.inspire.view31.LocalHooksEs" }, features = {
-		"src/main/features/view31/view-31-ir-18_es.feature" })
+		"src/test/features/view31/view-31-ir-18_es.feature" })
 public class ViewIR18TestEs {
 
 }
