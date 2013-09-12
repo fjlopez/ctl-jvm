@@ -7,7 +7,8 @@ Cucumber-JVM tooling and a library based in the semantics of the [OGC Compliance
 
 ## INSPIRE and CTL-JVM
 
-Check out our [INSPIRE test suites](https://github.com/fjlopez/ctl-jvm/tree/master/inspire). These test suites are available in:
+Check out our [INSPIRE test suites](https://github.com/fjlopez/ctl-jvm/tree/master/inspire) for Discovery and View services. They are based in the latest versions of the [Technical Guidance for the implementation](http://inspire.jrc.ec.europa.eu/index.cfm/pageid/5) documents.
+These test suites are available in:
 * English
 * Spanish
 
@@ -30,7 +31,7 @@ to make sure it remains readable.
 
 ## Bugs, feature requests and fixes
 
-We appreciate that. We follow [Cucumber-JVM rules](https://raw.github.com/cucumber/cucumber-jvm/master/CONTRIBUTING.md), thus, before you do it, please:
+We appreciate that. We follow [Cucumber-JVM rules](https://github.com/cucumber/cucumber-jvm/blob/master/CONTRIBUTING.md), thus, before you do it, please:
 * Feature request? Then don't expect it to be implemented unless you or someone else sends a [pull request](https://help.github.com/articles/using-pull-requests).
 * Reporting a bug? Bugs with [pull requests](https://help.github.com/articles/using-pull-requests) with a failing test that reproduces the bug get fixed quicker. 
 * Merging a [Pull requests](https://help.github.com/articles/using-pull-requests)? It won't be merged if you don't have a test to go with it.
