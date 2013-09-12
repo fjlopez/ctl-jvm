@@ -28,7 +28,7 @@ public class Discovery31EsDocxGen {
 	private void run() throws IOException, Docx4JException {
 		WordprocessingMLPackage wordMLPackage = WordprocessingMLPackage.createPackage();
 		MainDocumentPart mainPart = wordMLPackage.getMainDocumentPart();
-		File dir = new File("src/main/features/discovery31");
+		File dir = new File("src/test/features/discovery31");
 		for(File file: dir.listFiles()) {
 			if (file.getPath().endsWith("es.feature")) {
 			    ObjectFactory factory = Context.getWmlObjectFactory();

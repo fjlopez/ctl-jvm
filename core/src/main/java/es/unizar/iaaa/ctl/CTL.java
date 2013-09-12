@@ -218,6 +218,29 @@ public class CTL {
 	}
 
 	/**
+	 * Select a list of nodes using an XPath expression.
+	 * 
+	 * @param expr an XPath expression
+	 * @return a list of nodes
+	 * @author Francisco J Lopez-Pellicer
+	 */
+	public static List<Node> select(String expr) {
+		return select(context(), expr);
+	}
+
+	/**
+	 * Select an instance of {@code clazz} with an XPath expression.
+	 * 
+	 * @param expr an XPath expression
+	 * @param clazz a Java class
+	 * @return an instance of {@code clazz} or {@code null}
+	 * @author Francisco J Lopez-Pellicer
+	 */
+	public static <T> T select(String expr, Class<T> clazz) {
+		return select(context(), expr, clazz);
+	}
+
+	/**
 	 * Create an URLConnection. The classpath protocol is supported.
 	 * 
 	 * @param url
@@ -356,6 +379,20 @@ public class CTL {
 		return new TextURLConnection(url, text, encoding);
 	}
 
+
+	/**
+	 * A static method to transform a list of {@code Nodes} to a list of {@code Strings} 
+	 * by using {@code Node.getNodeValue()}.
+	 * @param list
+	 * @return Returns a list of strings. If list is {@code null} returns {@code null}.
+	 */
+	public static List<String> nodes2strings(List<Node> list) {
+		if (list == null) return null;
+		List<String> values = new ArrayList<String>();
+		for (Node n : list) values.add(n.getNodeValue());
+		return values;
+	}
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// DEPRECATED CODE
 	///////////////////////////////////////////////////////////////////////////////
